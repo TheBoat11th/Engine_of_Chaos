@@ -1,4 +1,4 @@
-Edited Lines for 60-540 FPS:
+Edited Lines for high refresh 60-540 FPS:
 
 Character_Properties_Max at line 70: 	var _animation_speed = .0625 / global.xspeed; //Animation Speed
 Meeting_Max_Cutscene at line 35: 	alarm[0] = 20 * global.xspeed;

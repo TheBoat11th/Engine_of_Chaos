@@ -15,7 +15,7 @@ font_color = c_white;//The color of our font
 font_type = fnt_MenuFont;//Font we're using
 
 start_button_text = "SPACE TO START";//Text that displays over the start button
-start_button = vk_space || vk_enter;//button that starts the game
+start_button = vk_space;//button that starts the game
 
 //================
 //Welcome Messages

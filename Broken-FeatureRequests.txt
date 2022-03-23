@@ -1,8 +1,3 @@
-//Save game breaks milkshake cutscene - unregestered dialouge message
-//Dialouge speed fix breaks multi-line scrolling
-
-Battle 01 map tree border is over the selection cursor
-
 One-key fastfoward breaks after loading save
 
 jump animation slows at high framerate
