@@ -9,8 +9,16 @@ function Create_Global_Game_Settings() {
 	global.Inspect_Button = ord("C");
 	global.Main_Menu_Button = vk_escape;
 	global.Full_Screen_Button = vk_f12;
+	global.Fastforward = ord("F");
+	global.EndFastforward = ord("W");
 
 	//game settings
+	global.Pixel_Divider = 3;
+	global.Vsync = false
+	global.FPS_Cap = 60;
+	global.BattleCursorSpeed = 4;
+	global.BattleCursorPathfinding = 6;
+	
 	global.Dialogue_Speed = 4;
 	global.Perma_Death = false;
 	global.Difficulty = "Normal";
@@ -32,11 +40,37 @@ function Create_Global_Game_Settings() {
 	global.Infinite_Movement = false;
 
 	//engine settings
-	global.View_Width = 480;//Width of the game's view
-	global.View_Height = 270;//Height of the game's view
+	//global.View_Width = 480;//Width of the game's view
+	//global.View_Height = 270;//Height of the game's view
 	global.Full_Screen = false;
-	display_reset(0, true);
-
+	
+	
+	var _file_name = ("Game_Settings.cfg");//Name of the file
+	if(file_exists(_file_name)){
+	    ini_open(_file_name);//Create save file
+	    //controls
+	   global.Pixel_Divider = ini_read_real("Settings","Pixel_Divider",global.Pixel_Divider);
+	   global.FPS_Cap = ini_read_real("Settings","FPS_Cap",global.FPS_Cap);
+	   global.Vsync = ini_read_string("Settings","Vsync",global.Vsync);
+	   if (global.Vsync = false){display_reset(0, false);}
+	   else {display_reset(0, true);}
+		ini_close();
+	}
+	
+	global.View_Width = display_get_width()/global.Pixel_Divider;//Width of the game's view - default 16:9 480
+	global.View_Height = display_get_height()/global.Pixel_Divider;//Height of the game's view - default 16:9 270
+	surface_resize(application_surface,display_get_width(),display_get_height());
+    
+	
+	//global.game_set_speed (90, gamespeed_fps);
+	//global.game_set_speed (global.FPS_Cap, gamespeed_fps);
+	//global.xspeed = global.FPS_Cap/60;
+	//global.previousroomspeed = global.FPS_Cap;
+	
+	if (global.Vsync = true){room_speed = ceil(display_get_frequency())}
+	else {room_speed = global.FPS_Cap;}
+	global.xspeed = global.FPS_Cap/60;
+  
 	global.Tile_Size = 24;
 	global.Number_Of_Inventory_Slots = 4;
 	global.Number_Of_Equipment_Slots = 2;

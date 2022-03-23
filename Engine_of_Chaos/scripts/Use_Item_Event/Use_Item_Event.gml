@@ -67,7 +67,7 @@ function Use_Item_Event() {
 	            state = "Choose_Target";
 	        }
 	        else{
-	            Create_Town_Effect_Controller(lookup_type,selected_character,selected_character,"Use_Item",id,selected_item_slot);//<character>, <target>, <action>, <current object>, <spell slot/item slot>, [spell level]
+	            Create_Town_Effect_Controller(lookup_type,selected_character,selected_character,"Use_Item",id,selected_item_slot,1);//<character>, <target>, <action>, <current object>, <spell slot/item slot>, [spell level]
 	            state = "Running_Use_Item_Script";
 	        }
 	    break;
@@ -92,6 +92,7 @@ function Use_Item_Event() {
 	            state = "End_Loop";
 	            Play_Sound(sfx_Menu_Select);
 	            pan_direction = "out";//pan the windows out
+				pan_speed = pan_speed / 10;
 	            input_event = "none";
 	            allow_interaction = false;//disable player interaction with this object
 	            if(portrait_controller != noone){
@@ -113,7 +114,7 @@ function Use_Item_Event() {
 	    break;
     
 	    case "Selected_Target_Character":
-	        Create_Town_Effect_Controller(lookup_type,selected_character,character_list[start_index + index],"Use_Item",id,selected_item_slot);//<character>, <target>, <action>, <current object>, <spell slot/item slot>, [spell level]
+	        Create_Town_Effect_Controller(lookup_type,selected_character,character_list[start_index + index],"Use_Item",id,selected_item_slot,1);//<character>, <target>, <action>, <current object>, <spell slot/item slot>, [spell level]
 	        state = "Running_Use_Item_Script";
 	    break;
     

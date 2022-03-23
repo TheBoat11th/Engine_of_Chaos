@@ -7,7 +7,7 @@ function Create_Control_Config_Menu(_object) {
 	    play_pan_sound = true;
 	    display_type = "Control_Config";
     
-	    number_of_menu_options = 8;//Number of options in array below
+	    number_of_menu_options = 10;//Number of options in array below
 	    max_options_on_screen = 9; //Maximum number of options that will fit in the window
     
 	    //Make sure you also change Update_Control_Array and Swap_Duplicate_Controls scripts
@@ -20,6 +20,8 @@ function Create_Control_Config_Menu(_object) {
 	    menu_options[5] = "Cancel";
 	    menu_options[6] = "Inspect";
 	    menu_options[7] = "Main Menu";
+		menu_options[8] = "Fastforward";
+		menu_options[9] = "EndFastforward";
     
 	    menu_locked[0] = false;//Certain slots can be 'locked'
 	    menu_locked[1] = false;
@@ -29,6 +31,8 @@ function Create_Control_Config_Menu(_object) {
 	    menu_locked[5] = false;
 	    menu_locked[6] = false;
 	    menu_locked[7] = false;
+		menu_locked[8] = false;
+		menu_locked[9] = false;
     
 	    //============================
 	    //Post Modifyable Calculations

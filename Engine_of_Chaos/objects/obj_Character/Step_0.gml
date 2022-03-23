@@ -1,3 +1,32 @@
+	//Fastforward
+if (keyboard_check_pressed(global.Fastforward) = true) {
+	room_speed = 4000;
+	display_reset(0, false);
+}
+if (keyboard_check_pressed(global.EndFastforward) = true) {
+		room_speed = global.FPS_Cap;
+		if (global.Vsync = true){
+		display_reset(0, true);}
+	}
+	//### One-key fastfoward
+/*if (keyboard_check_pressed(global.Fastforward) = true) {
+	if (game_get_speed(gamespeed_fps) < 600) {
+	game_set_speed(610, gamespeed_fps);
+	display_reset(0, false);
+	}
+else {
+	game_set_speed(global.FPS_Cap, gamespeed_fps);
+		if (global.Vsync = true){
+		display_reset(0, true);}
+	}
+}*/
+
+if (keyboard_check_pressed(global.Main_Menu_Button) = true) {
+				Create_Screen_Fade(c_black,0,1,.04,"out",id);//color,initial alpha,end alpha,fade speed, fade direction, current object
+				
+				room_goto(room_Title_Screen);
+	}
+
 //================
 //Player Movement=
 //================

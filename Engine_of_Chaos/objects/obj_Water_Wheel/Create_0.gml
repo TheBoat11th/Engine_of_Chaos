@@ -1,2 +1,2 @@
-image_speed = .125;
+image_speed = .125 / global.xspeed;
 

@@ -17,7 +17,7 @@ sprite_light_color = c_white;//color of sprite light
 scale = 1;//scale of sprite
 
 //Torch animation speed
-image_speed = .125;
+image_speed = .125 / global.xspeed;
 torch_alpha1 = 1;//alpha of the light
 torch_alpha2 = .8;//alpha of the light
 

@@ -12,6 +12,9 @@ function Game_Settings_Event() {
 	            case 2: old_setting = global.Perma_Death; break;
 	            case 3: old_setting = global.Sound_Volume; break;
 	            case 4: old_setting = global.Music_Volume; break;
+				case 5: old_setting = global.Pixel_Divider; break;
+				case 6: old_setting = global.Vsync; break;
+				case 7: old_setting = global.FPS_Cap; break;
 	        }
 	        Play_Sound(sfx_Menu_Select);
 	    }
@@ -30,6 +33,9 @@ function Game_Settings_Event() {
 	            case 2: Toggle_Perma_Death(); Play_Sound(sfx_Menu_Move); break;//Perma-death
 	            case 3: Increase_Sound_Volume(); Play_Sound(sfx_Menu_Move); break;//SFX Control
 	            case 4: Increase_Music_Volume(); Play_Sound(sfx_Menu_Move); break;//BGM Control
+				case 5: Increase_Pixel_Divider(); Play_Sound(sfx_Menu_Move); break;//Pixel Divider Control
+				case 6: Toggle_Vsync(); Play_Sound(sfx_Menu_Move); break;//Toggle Vsync
+				case 7: Increase_FPS_Cap(); Play_Sound(sfx_Menu_Move); break;//FPS Cap Control
 	        }
 	        Update_Game_Settings_Array();
 	    }
@@ -40,6 +46,9 @@ function Game_Settings_Event() {
 	            case 2: Toggle_Perma_Death(); Play_Sound(sfx_Menu_Move); break;//Perma-death
 	            case 3: Decrease_Sound_Volume(); Play_Sound(sfx_Menu_Move); break;//SFX Control
 	            case 4: Decrease_Music_Volume(); Play_Sound(sfx_Menu_Move); break;//BGM Control
+				case 5: Decrease_Pixel_Divider(); Play_Sound(sfx_Menu_Move); break;//Pixel Divider Control
+				case 6: Toggle_Vsync(); Play_Sound(sfx_Menu_Move); break;//Toggle Vsync
+				case 7: Decrease_FPS_Cap(); Play_Sound(sfx_Menu_Move); break;//FPS Cap Control
 	        }
 	        Update_Game_Settings_Array();
 	    }
@@ -55,6 +64,9 @@ function Game_Settings_Event() {
 	            case 2: global.Perma_Death = old_setting; break;
 	            case 3: global.Sound_Volume = old_setting; break;
 	            case 4: global.Music_Volume = old_setting; Update_Music_Volume(); break;
+				case 5: global.Pixel_Divider = old_setting; break;
+				case 6: global.Vsync = old_setting; break;
+				case 7: global.FPS_Cap = old_setting; break;
 	        }
 	        Update_Game_Settings_Array();
 	        state = "Selecting_Option";

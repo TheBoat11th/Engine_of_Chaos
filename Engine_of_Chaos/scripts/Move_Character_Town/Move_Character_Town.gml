@@ -53,10 +53,11 @@ function Move_Character_Town(_x,_y,_direction,_tiles,_speed,_animation_speed,_lo
 	//===============
 	else{//normal movement
 	    if(global.In_Battle && !cutscene_mode){
-	        Play_Sound(sfx_Walk);
-	    }
+	        Play_Sound(sfx_Walk); }
 	    moving = true;// Lets start moving
-	    move_speed = _speed;//set speed to whatever the player's walk speed is
+	
+		move_speed = _speed / global.xspeed;
+		//move_speed = _speed;//set speed to whatever the player's walk speed is
 	    move_timer = global.Tile_Size;// Ready moveTimer for countdown
 	    speed_x = -round(x-_x)/(global.Tile_Size/move_speed);
 	    speed_y = -round(y-_y)/(global.Tile_Size/move_speed);

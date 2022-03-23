@@ -5,13 +5,13 @@ play_pan_sound = false;
 
 max_pan = (floor(Get_Camera_Width() / 2) + 300);
 window_pan = max_pan;
-pan_speed = (max_pan / 12);
+pan_speed = (max_pan / (12 * global.xspeed));
 allow_interaction = false;
 
 show_markers = true;
 marker_flash_state = 0;
 marker_flash_timer = 0;
-max_flash_time = 15;
+max_flash_time = 15 * global.xspeed;
 show_character_markers = true;
 show_chest_markers = false;
 

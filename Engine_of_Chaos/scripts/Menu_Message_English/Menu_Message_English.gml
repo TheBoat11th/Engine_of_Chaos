@@ -96,6 +96,10 @@ function Menu_Message_English() {
 	            case "Difficulty": return ("Difficulty"); break;
 	            case "Sound_Volume": return ("Sound Volume"); break;
 	            case "Music_Volume": return ("Music Volume"); break;
+				case "Pixel_Divider": return ("Pixel Divider"); break;
+				case "Vsync": return ("Vsync"); break;
+				case "FPS_Cap": return ("FPS Cap"); break;
+				
 	        }
 	    break;
 	    case "Cheats_Menu":

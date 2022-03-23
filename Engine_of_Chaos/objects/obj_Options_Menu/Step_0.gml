@@ -35,7 +35,7 @@ if(window_pan_direction != "none"){
 //Arrow Flash
 //===========
 if(show_scroll_arrows){
-    scroll_arrow_timer -= 1;
+    scroll_arrow_timer -= 1 / global.xspeed;
     if(scroll_arrow_timer <= 0 ){
         if(scroll_arrow_state = 1){
             scroll_arrow_state = 0;//turn arrow off

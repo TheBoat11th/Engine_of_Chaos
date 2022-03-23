@@ -4,7 +4,7 @@
 window_pan_direction = "none";//direction of the pan
 allow_interaction = false;//Are we able to interact with this object
 
-cursor_flash_timer = 15;//Time between arrow flashes
+cursor_flash_timer = 15 * global.xspeed;//Time between arrow flashes
 cursor_flash_state = 0;//0/1 on or off
 
 completed_name = "";//the end result of the name
@@ -19,8 +19,8 @@ state = "Naming_Character";
 portrait_controller = noone;//link to portrait controller
 
 //input repeat delays
-max_input_delay = 40;//on key press, set timer to 40
-min_input_delay = 5;//on continued hold, set timer to 5
+max_input_delay = 40 * global.xspeed;//on key press, set timer to 40
+min_input_delay = 5 * global.xspeed;//on continued hold, set timer to 5
 input_delay = max_input_delay;
 auto_move = false;
 
@@ -83,5 +83,5 @@ character_name_window_pan_x = max_character_name_window_pan_x;
 character_name_window_pan_y = max_character_name_window_pan_y;
 name_character_window_pan = max_name_character_window_pan;
 
-pan_speed = 8;
+pan_speed = 8 * global.xspeed;
 

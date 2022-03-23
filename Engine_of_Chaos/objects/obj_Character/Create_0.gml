@@ -31,7 +31,7 @@ summoned_turns_remaining = -1;//How many turns do they get when summoned? (-1 fo
 //AI Stuff
 waiting_for_AI = false;
 ai_timer = 0;
-max_ai_timer = 18;
+max_ai_timer = 18 * global.xspeed;
 ai_script_ID = "Default";
 ai_x_origin = x;
 ai_y_origin = y;
@@ -52,7 +52,7 @@ for(i = 0; i < 10; i += 1){//Sets all 10 flags to '0'
 
 //pathfinding
 pathfinding = false;//are we currently moving a path?
-pathfinding_speed = 2;//speed when moving on a path
+pathfinding_speed = 2 / global.xspeed;//speed when moving on a path
 path_timer = 0;//timer for moving on path (to play step sound)
 pathfind_loop = false;//for transfer tiles
 pathfinding_end_action = "none";//what do we do during 'end of path' event?
@@ -286,7 +286,7 @@ dialogue_ID = "none";//dialogue message id for default 1-line responses
 
 advisor_dialogue_greeting_ID = "Default_Advisor_Greeting";
 advisor_dialogue_farewell_ID = "Default_Advisor_Farewell";
-event_cooldown = 60;//time between movement events
+event_cooldown = 60 * global.xspeed;//time between movement events
 event_timer = event_cooldown;//event timer
 has_circuit = false;//do they walk a set path?
 circuit_direction = "up";//default direction
@@ -321,9 +321,9 @@ church_dialogue_ID[3] = "Default_Church";//Church dialogue script (Save)
 //===========
 //Modifyables
 //===========
-idle_animation_speed = .0625;//animation speed for standing still
-player_walking_animation_speed = .125;//animation speed for moving
-npc_walking_animation_speed = .0625;//animation speed for moving
+idle_animation_speed = .0625 / global.xspeed;//animation speed for standing still
+player_walking_animation_speed = .125 / global.xspeed;//animation speed for moving
+npc_walking_animation_speed = .0625 / global.xspeed;//animation speed for moving
 player_move_speed = 2;//walk speed when the player moves them
 npc_move_speed = 1;//walk speed when an NPC moves by itself
 move_speed = 0;//actual move speed (set via above 2, or cutscenes)

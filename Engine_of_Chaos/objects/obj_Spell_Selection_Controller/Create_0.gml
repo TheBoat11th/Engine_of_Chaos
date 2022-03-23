@@ -34,7 +34,7 @@ input_event = "none";//what button did we push?
 //=======================
 font_color = c_white;//The color of our font
 menu_font = fnt_MenuFont;//Font we're using
-animation_speed = .0625;
+animation_speed = .0625 / global.xspeed;
 number_of_menu_options = global.Number_Of_Spell_Slots;
 
 inventory_slot[0] = 0;
@@ -45,10 +45,10 @@ spell_level = 1;
 //menu_event[0] = 'none';//event for clicking slot 0
 //menu_animated[0] = -1;
 
-pan_speed_up = (max_y_pan / 8);//pan speed up
-pan_speed_down = (max_y_pan / 8);//pan speed down
-pan_speed_left = (max_x_pan / 8);//25;//pan speed left
-pan_speed_right = (max_x_pan / 8);//25;//pan speed right
+pan_speed_up = (max_y_pan / (8 * global.xspeed));//pan speed up
+pan_speed_down = (max_y_pan / (8 * global.xspeed));//pan speed down
+pan_speed_left = (max_x_pan / (8 * global.xspeed));//25;//pan speed left
+pan_speed_right = (max_x_pan / (8 * global.xspeed));//25;//pan speed right
 
 //============================
 //Post Modifyable Calculations

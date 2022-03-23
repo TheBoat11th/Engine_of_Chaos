@@ -1,7 +1,7 @@
 //===========================
 //Non-Modifyable Declarations
 //===========================
-image_speed = .0625;
+image_speed = .0625 / global.xspeed;
 allow_interaction = false;
 lookup_type = "Global";//what stat set are we reading from?
 action = "Status";//what action are we performing
@@ -40,8 +40,9 @@ selected_item = 0;//item slot for giving / using items
 selected_item_slot = 0;
 
 //input repeat delays
-max_input_delay = 40;//on key press, set timer to 40
-min_input_delay = 5;//on continued hold, set timer to 5
+max_input_delay = 40 * global.xspeed;//on key press, set timer to 40
+min_input_delay = 5 * global.xspeed;//on continued hold, set timer to 5
+//image_speed = .0625
 input_delay = max_input_delay;
 auto_move = false;
 
@@ -74,7 +75,7 @@ top_window_pan_x = max_top_window_pan_x;
 top_window_pan_y = max_top_window_pan_y;
 bottom_window_pan = max_bottom_window_pan;
 
-pan_speed = 8;
+pan_speed = 8 * global.xspeed;
 pan_direction = "none";
 
 //list data

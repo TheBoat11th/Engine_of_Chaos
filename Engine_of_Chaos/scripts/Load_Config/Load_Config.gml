@@ -15,13 +15,16 @@ function Load_Config(){
 	    global.Cancel_Button = ini_read_real("Controls","Cancel_Button",global.Cancel_Button);
 	    global.Inspect_Button = ini_read_real("Controls","Inspect_Button",global.Inspect_Button);
 	    global.Main_Menu_Button = ini_read_real("Controls","Main_Menu_Button",global.Main_Menu_Button);
+		global.Fastforward = ini_read_real("Controls","Fastforward",global.Fastforward);
+		global.EndFastforward = ini_read_real("Controls","EndFastforward",global.EndFastforward);
     
 	    //settings
 	    global.Dialogue_Speed = ini_read_real("Settings","Dialogue_Speed",global.Dialogue_Speed);
 	    global.Sound_Volume = ini_read_real("Settings","Sound_Volume",global.Sound_Volume);
 	    global.Music_Volume = ini_read_real("Settings","Music_Volume",global.Music_Volume);
 	    global.Language = ini_read_string("Settings","Language",global.Language);
-    
+		global.Perma_Death = ini_read_string("Settings","Perma_Death",global.Perma_Death);
+	
 	    ini_close();
 	}
 }

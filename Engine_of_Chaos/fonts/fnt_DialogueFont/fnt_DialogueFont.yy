@@ -3,6 +3,7 @@
   "glyphOperations": 0,
   "interpreter": 0,
   "pointRounding": 0,
+  "applyKerning": 0,
   "fontName": "Shining Force",
   "styleName": "Regular",
   "size": 12.0,
@@ -20,6 +21,7 @@
     "path": "texturegroups/Default",
   },
   "ascenderOffset": 0,
+  "ascender": 0,
   "glyphs": {
     "32": {"x":120,"y":76,"w":3,"h":14,"character":32,"shift":3,"offset":0,},
     "33": {"x":25,"y":92,"w":3,"h":11,"character":33,"shift":5,"offset":1,},

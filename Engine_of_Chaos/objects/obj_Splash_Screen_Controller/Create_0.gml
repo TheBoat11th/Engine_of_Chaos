@@ -4,12 +4,12 @@ Create_Audio_Controller();//Create Audio Controller
 Load_Config();//Load our configuration (If it exists)
 
 sprite_index = spr_Splash_Screen_Character;
-image_speed = .17;
+image_speed = .17 / global.xspeed;
 
 display_text = false;
 fade_direction = "none";
 
-fade_speed = .05;
+fade_speed = .05 * global.xspeed;
 fade = 0;
 
 previous_frame = 0;

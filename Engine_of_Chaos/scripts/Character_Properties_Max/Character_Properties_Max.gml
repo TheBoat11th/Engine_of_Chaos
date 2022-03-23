@@ -4,12 +4,12 @@
 function Town_Character_Stats_Max(_character){
 	with(_character){
 		Set_Town_Party_Member_Stats(1);
-		if(global.Story_State = 1){
+		if(global.Story_State <= 2){
 			allow_wander = false;
 			dialogue_script =  "Max_With_Milkshake_Cutscene";
 			Face_Direction(id,"Down");
 		}
-		else if(global.Story_State <= 3){
+		else if(global.Story_State = 3){
 			allow_wander = false;
 			dialogue_script =  "Max_With_Milkshake_Cutscene";
 			x = 312;
@@ -67,7 +67,7 @@ function Get_Battle_Sprite_Stats_Max_ARCR(_animation,_stat){
 	var _parent_animation = _animation;
 	var _location = "Foreground"; //Foreground or Background
 	var _sprite = spr_Max_Idle; //Sprite
-	var _animation_speed = .0625; //Animation Speed
+	var _animation_speed = .0625 / global.xspeed; //Animation Speed
 	var _projectile_type = "Weapon"; //Projectile Sprite ("Weapon" uses sprite set via item's script)
 	var _projectile_path = "Default"; //Path of the projectile ("Default" = straight line, "Arc" = long volley)
 	var _event_type = "Default"; //Battle Cutscene event script to run (laser eye / prism flowers /etc)

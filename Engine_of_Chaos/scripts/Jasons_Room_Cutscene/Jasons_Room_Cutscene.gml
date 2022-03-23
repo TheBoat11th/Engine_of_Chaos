@@ -4,22 +4,22 @@ function Jasons_Room_Cutscene() {
 	switch(state){
 	    case 0:
 	        Create_Screen_Fade(c_black,1,2,0,"out",id);//Color, Alpha, Stop, Speed, Direction, Current Object
-	        alarm[0] = 120;
+	        alarm[0] = 120 * global.xspeed;
 	        state += 1;
 	    break;
 	    case 1:
 	        Play_Sound(sfx_Door);
-	        alarm[0] = 30;
+	        alarm[0] = 30 * global.xspeed;
 	        state += 1;
 	    break;
 	    case 2:
 	        Play_Sound(sfx_Door);
-	        alarm[0] = 30;
+	        alarm[0] = 30 * global.xspeed;
 	        state += 1;
 	    break;
 	    case 3:
 	        Play_Sound(sfx_Door);
-	        alarm[0] = 60;
+	        alarm[0] = 60 * global.xspeed;
 	        state += 1;
 	    break;
 	    case 4:
@@ -27,22 +27,22 @@ function Jasons_Room_Cutscene() {
 	        Create_Dialogue(noone,Get_Character_Voice("Global",1,"Total"),Get_Character_Name("Global",0,"Total") + "!",id,true,true);//portrait, voice, message,object,arrow,pan
 	    break;
 	    case 5:
-	        alarm[0] = 30;
+	        alarm[0] = 30 * global.xspeed;
 	        state += 1;
 	    break;
 	    case 6:
 	        Play_Sound(sfx_Door);
-	        alarm[0] = 10;
+	        alarm[0] = 10 * global.xspeed;
 	        state += 1;
 	    break;
 	    case 7:
 	        Play_Sound(sfx_Door);
-	        alarm[0] = 10;
+	        alarm[0] = 10 * global.xspeed;
 	        state += 1;
 	    break;
 	    case 8:
 	        Play_Sound(sfx_Door);
-	        alarm[0] = 10;
+	        alarm[0] = 10 * global.xspeed;
 	        state += 1;
 	    break;
 	    case 9:

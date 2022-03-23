@@ -6,7 +6,10 @@ function Item_Stats_AU_Ring_Of_Chicken(_lookup_type,_character){
 	portrait_sprite_ID = spr_Chicken_Portrait;
 	voice_ID = sfx_Dialogue01;
 	battle_cutscene_sprite_ID = "Chicken";
-	off_hand = true;
+	//main_hand = true;
+		max_use_range = 1;
+	min_use_range = -1;
+	use_size = 1;
 	shop_type = "Equipment";
 	frame_number = 15;
 	value = 10;

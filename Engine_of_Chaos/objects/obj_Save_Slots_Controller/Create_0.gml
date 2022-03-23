@@ -10,7 +10,7 @@ play_pan_sound = false;
 event = "none";
 
 //Scroll arrow
-max_scroll_arrow_timer = 15;//Time between arrow flashes
+max_scroll_arrow_timer = 15 * global.xspeed;//Time between arrow flashes
 scroll_arrow_timer = max_scroll_arrow_timer;
 scroll_arrow_state = 0;//0/1 on or off
 show_scroll_arrows = true;//do we show the scroll arrows? (off when selections are made)
@@ -18,8 +18,8 @@ arrow_position = 0;//array position of the selection arrow
 start_index = 0;//the first menu option to be shown (Scroll bar)
 
 //input repeat delays
-max_input_delay = 40;//on key press, set timer to 40
-min_input_delay = 5;//on continued hold, set timer to 5
+max_input_delay = 40 * global.xspeed;//on key press, set timer to 40
+min_input_delay = 5 * global.xspeed;//on continued hold, set timer to 5
 input_delay = max_input_delay;
 auto_move = false;
 
@@ -39,7 +39,7 @@ menu_font = fnt_MenuFont;//Font we're using
 window_x = 8;
 window_y = 8 + sprite_get_height(spr_Start_Menu_Window);
 
-pan_speed = 8;
+pan_speed = 8 * global.xspeed;
 window_pan = 0;
 window_width = sprite_get_width(spr_Save_Slot_Window);
 max_pan = window_x + window_width;

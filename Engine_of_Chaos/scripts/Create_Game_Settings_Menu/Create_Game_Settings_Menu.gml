@@ -7,7 +7,7 @@ function Create_Game_Settings_Menu(_object) {
 	    play_pan_sound = true;
 	    display_type = "Game_Settings";
     
-	    number_of_menu_options = 5;//Number of options in array below
+	    number_of_menu_options = 8;//Number of options in array below
 	    max_options_on_screen = 8; //Maximum number of options that will fit in the window
     
 	    //Make sure you also change Update_Control_Array and Swap_Duplicate_Controls scripts
@@ -18,13 +18,19 @@ function Create_Game_Settings_Menu(_object) {
 	    //menu_options[3] = Get_Menu_Display_Message('Game_Settings_Menu','Difficulty');
 	    menu_options[3] = Get_Menu_Display_Message("Game_Settings_Menu","Sound_Volume");
 	    menu_options[4] = Get_Menu_Display_Message("Game_Settings_Menu","Music_Volume");
-    
+		menu_options[5] = Get_Menu_Display_Message("Game_Settings_Menu","Pixel_Divider");
+		menu_options[6] = Get_Menu_Display_Message("Game_Settings_Menu","Vsync");
+		menu_options[7] = Get_Menu_Display_Message("Game_Settings_Menu","FPS_Cap");
+		
 	    menu_locked[0] = false;//Certain slots can be 'locked'
 	    menu_locked[1] = false;
 	    menu_locked[2] = false;
 	    //menu_locked[3] = false;
 	    menu_locked[3] = false;
 	    menu_locked[4] = false;
+		menu_locked[5] = false;
+		menu_locked[6] = false;
+		menu_locked[7] = false;
     
 	    //============================
 	    //Post Modifyable Calculations

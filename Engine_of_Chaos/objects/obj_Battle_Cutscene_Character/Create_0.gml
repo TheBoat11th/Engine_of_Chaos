@@ -59,4 +59,3 @@ font_color = c_white;//The color of our font
 menu_font = fnt_MenuFont;//Font we're using
 display_type = "Main_HUD";//Where to draw the HUD
 window_pan = 0;//Not used, needed to re-use draw script
-

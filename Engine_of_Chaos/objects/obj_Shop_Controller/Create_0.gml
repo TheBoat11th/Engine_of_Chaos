@@ -14,8 +14,8 @@ current_npc = noone;
 lookup_type = "Global";
 
 //input repeat delays
-max_input_delay = 40;//on key press, set timer to 40
-min_input_delay = 5;//on continued hold, set timer to 5
+max_input_delay = 40 * global.xspeed;//on key press, set timer to 40
+min_input_delay = 5 * global.xspeed;//on continued hold, set timer to 5
 input_delay = max_input_delay;
 auto_move = false;
 
@@ -29,7 +29,7 @@ arrow_flash_speed = 10;
 
 cursor_flash = 0;
 cursor_flash_timer = 0;
-cursor_flash_speed = 10;
+cursor_flash_speed = 10 * global.xspeed;
 
 item_scroll_timer = 0;
 item_scroll_speed = 4;
@@ -53,7 +53,7 @@ gold_window_y = (Get_Camera_Height() - (sprite_get_height(spr_Shop_Gold_Window) 
 max_gold_window_pan = (sprite_get_width(spr_Shop_Gold_Window) + 8);
 gold_window_pan = max_gold_window_pan;
 
-pan_speed = 8;
+pan_speed = 8 * global.xspeed;
 
 pan_direction = "none";
 display_type = "Default";

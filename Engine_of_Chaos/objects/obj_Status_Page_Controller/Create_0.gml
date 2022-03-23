@@ -26,7 +26,7 @@ sidebar_window_y = status_page_y + sprite_get_height(spr_Default_Portrait);
 gold_window_x = sidebar_window_x;
 gold_window_y = sidebar_window_y + sprite_get_height(spr_Status_Sidebar_Window);
 
-pan_speed = 8;
+pan_speed = 8 * global.xspeed;
 
 page_window_pan = 0;
 sidebar_window_pan = 0;

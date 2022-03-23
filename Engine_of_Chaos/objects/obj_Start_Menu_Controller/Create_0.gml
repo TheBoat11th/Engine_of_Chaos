@@ -18,8 +18,8 @@ arrow_position = 0;//array position of the selection arrow
 start_index = 0;//the first menu option to be shown (Scroll bar)
 
 //input repeat delays
-max_input_delay = 40;//on key press, set timer to 40
-min_input_delay = 5;//on continued hold, set timer to 5
+max_input_delay = 40 * global.xspeed;//on key press, set timer to 40
+min_input_delay = 5 * global.xspeed;//on continued hold, set timer to 5
 input_delay = max_input_delay;
 auto_move = false;
 
@@ -43,7 +43,7 @@ menu_font = fnt_MenuFont;//Font we're using
 window_x = 8;
 window_y = 8;
 
-pan_speed = 8;
+pan_speed = 8 * global.xspeed;
 window_pan = 0;
 window_width = sprite_get_width(spr_Start_Menu_Window);
 max_pan = window_x + window_width;

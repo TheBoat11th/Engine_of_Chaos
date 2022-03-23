@@ -25,6 +25,8 @@ function Control_Config_Event() {
 	        case 5: Swap_Duplicate_Controls("Cancel"); global.Cancel_Button = keyboard_lastkey; break; //set cancel button to new key
 	        case 6: Swap_Duplicate_Controls("Inspect"); global.Inspect_Button = keyboard_lastkey; break; //set inspect button to new key
 	        case 7: Swap_Duplicate_Controls("Main Menu"); global.Main_Menu_Button = keyboard_lastkey; break; //set main menu button to new key
+			case 8: Swap_Duplicate_Controls("FastForward"); global.Fastforward = keyboard_lastkey; break; //set Fastforward button to new key
+			case 9: Swap_Duplicate_Controls("EndFastforward"); global.EndFastforward = keyboard_lastkey; break; //set EndFastforward button to new key
 	    }
 	    Update_Control_Array();//Update the array with current controls
 	    state = "Selecting_Option";//return to previous state

@@ -54,6 +54,5 @@ if(shake_timer != 0){
         shake_x = random_range(-shake_power_x,shake_power_x);
         shake_y = random_range(-shake_power_y,shake_power_y);
     }
-    
 }
 

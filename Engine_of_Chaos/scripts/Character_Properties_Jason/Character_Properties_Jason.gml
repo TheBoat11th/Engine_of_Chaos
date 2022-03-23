@@ -57,7 +57,7 @@ function Get_Battle_Sprite_Stats_Jason_SDMN(_animation,_stat){
 	var _parent_animation = _animation;
 	var _location = "Foreground"; //Foreground or Background
 	var _sprite = spr_Jason_Idle; //Sprite
-	var _animation_speed = .0625; //Animation Speed
+	var _animation_speed = .0625 / global.xspeed; //Animation Speed
 	var _projectile_type = "Weapon"; //Projectile Sprite ("Weapon" uses sprite set via item's script)
 	var _projectile_path = "Default"; //Path of the projectile ("Default" = straight line, "Arc" = long volley)
 	var _event_type = "Default"; //Battle Cutscene event script to run (laser eye / prism flowers /etc)

@@ -1,0 +1,5 @@
+C:\Users\Username\AppData\Local\Engine_of_Chaos\Game_Settings.cfg
+
+key config defined in Get_Control_Names
+
+Display Cursor Disabled inrelease

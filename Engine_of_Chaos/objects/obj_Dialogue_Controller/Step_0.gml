@@ -57,7 +57,7 @@ if(ending_message){
 //==================//
 else if(!printing){//if current character is more than the amount in the current message (if we are at the end of the message)
     if(display_arrow||wait_for_input){//Arrow flash timer
-        arrow_timer -= 1;
+        arrow_timer -= 1 / global.xspeed;
         if(arrow_timer <= 0 ){
             if(arrow_state = 1){
                 arrow_state = 0;//turn arrow off
@@ -69,7 +69,7 @@ else if(!printing){//if current character is more than the amount in the current
             }
         }
     }
-    if((keyboard_check(global.Inspect_Button)||keyboard_check(global.Select_Button)||force_end)&&(allow_interaction)){ //if we press Continue...
+    if((keyboard_check(global.Inspect_Button)||keyboard_check(global.Select_Button)||keyboard_check(global.Cancel_Button)||force_end)&&(allow_interaction)){ //if we press Continue...
         if(wait_for_input){//if we're continuing the message print
             wait_for_input = false;//no longer waiting for input
             printing = true;//continue printing
@@ -92,7 +92,7 @@ else if(!printing){//if current character is more than the amount in the current
 
 //Takes care of printing out the message letter by letter based on speed.
 if(printing){
-    print_delay -= 1;
+    print_delay -= 1 / global.xspeed;
     if(print_delay <= 0){
         if(!scrolling){
         

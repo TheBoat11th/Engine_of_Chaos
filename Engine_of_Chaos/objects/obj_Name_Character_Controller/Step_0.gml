@@ -48,11 +48,11 @@ cursor_flash_timer -= 1;
 if(cursor_flash_timer <= 0 ){
     if(cursor_flash_state = 1){
         cursor_flash_state = 0;//turn arrow off
-        cursor_flash_timer = 15;//reset flash time
+        cursor_flash_timer = 15 * global.xspeed;//reset flash time
     }
     else{
         cursor_flash_state = 1;//turn arrow on
-        cursor_flash_timer = 15;//reset flash time
+        cursor_flash_timer = 15 * global.xspeed;//reset flash time
     }
 }
 

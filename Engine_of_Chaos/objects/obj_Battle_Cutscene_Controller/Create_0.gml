@@ -86,7 +86,7 @@ camera_target = noone;
 
 x_pan = 0;
 max_x_pan = (2*scene_width);
-x_pan_speed = 35;
+x_pan_speed = 35 / global.xspeed;
 
 //screen shaking
 shake_timer = 0;

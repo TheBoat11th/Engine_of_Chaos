@@ -20,7 +20,6 @@ function Meeting_Max_Cutscene() {
 	}
 
 
-
 	switch(state){
 	    case 0:
 	        state += 2;
@@ -33,7 +32,7 @@ function Meeting_Max_Cutscene() {
 	    break;
 	    case 2:
 	        state += 1;
-	        alarm[0] = 20;
+	        alarm[0] = 20 * global.xspeed;
 	    break;
 	    case 3:
 	        state += 1;
@@ -53,7 +52,7 @@ function Meeting_Max_Cutscene() {
 	    break;
 	    case 7:
 	        state += 1;
-	        alarm[0] = 20;
+	        alarm[0] = 20 * global.xspeed;
 	    break;
 	    case 8:
 	        state += 1;
@@ -74,7 +73,7 @@ function Meeting_Max_Cutscene() {
 	    break;
 	    case 12:
 	        state += 1;
-	        alarm[0] = 20;
+	        alarm[0] = 20 * global.xspeed;
 	    break;
 	    case 13:
 	        state += 1;
@@ -96,7 +95,7 @@ function Meeting_Max_Cutscene() {
 	    break;
 	    case 17:
 	        state += 1;
-	        alarm[0] = 20;
+	        alarm[0] = 20 * global.xspeed;
 	    break;
 	    case 18:
 	        state += 1;
