@@ -5,7 +5,7 @@ function Create_Screen_Flash(_color,_start,_direction,_iterations,_speed,_min,_m
 	    flash_timer = _start;
 	    flash_direction = _direction;
 	    iterations = _iterations;
-	    flash_speed = _speed;
+	    flash_speed = _speed/global.xspeed;
 	    flash_min = _min;
 	    flash_max = _max;
 	    if(_current_object != noone){
