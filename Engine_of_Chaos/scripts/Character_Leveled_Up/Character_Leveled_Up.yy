@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Character_Stats",
-    "path": "folders/Scripts/DONE/Characters/Character_Stats.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "Character_Leveled_Up",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Character_Stats",
+    "path": "folders/Scripts/Game_Logic/Characters/Character_Stats.yy",
+  },
 }

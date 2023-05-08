@@ -49,7 +49,7 @@ function Get_Battle_Sprite_Stats_SF2_Burst_Rock(_animation,_stat){
 	var _parent_animation = _animation;
 	var _location = "Background"; //Foreground or Background
 	var _sprite = spr_SF2_Burst_Rock_Idle; //Sprite
-	var _animation_speed = .125 / global.xspeed; //Animation Speed
+	var _animation_speed = .125; //Animation Speed
 	var _projectile_type = "Weapon"; //Projectile Sprite ("Weapon" uses sprite set via item's script)
 	var _projectile_path = "Default"; //Path of the projectile ("Default" = straight line, "Arc" = long volley)
 	var _event_type = "Default"; //Battle Cutscene event script to run (laser eye / prism flowers /etc)

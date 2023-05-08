@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Room_Properties",
-    "path": "folders/Scripts/Room_Properties.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "Room_Properties_Battle_01",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Battles",
+    "path": "folders/Scripts/Room_Properties/Battles.yy",
+  },
 }

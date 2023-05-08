@@ -40,6 +40,9 @@ function Pressed_Key(_key,_auto_move) {
 	    case "Full_Screen_Button":
 	        if(keyboard_check_pressed(global.Full_Screen_Button)||(keyboard_check(global.Full_Screen_Button)&&(_auto_move))){ return true; }
 	    break;
+		case "Fastforward":
+	        if(keyboard_check_pressed(global.Fastforward)||(keyboard_check(global.Fastforward)&&(_auto_move))){ return true; }
+	    break;
 	    case "Any_Button":
 	        if(keyboard_check_pressed(vk_anykey)||(keyboard_check(vk_anykey)&&(_auto_move))){ return true; }
 	    break;

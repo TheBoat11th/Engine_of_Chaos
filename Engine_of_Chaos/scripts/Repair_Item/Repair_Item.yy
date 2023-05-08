@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Shop_Functions",
-    "path": "folders/Scripts/DONE/Shops/Shop_Functions.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "Repair_Item",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Shop_Functions",
+    "path": "folders/Scripts/Game_Logic/Shops/Shop_Functions.yy",
+  },
 }

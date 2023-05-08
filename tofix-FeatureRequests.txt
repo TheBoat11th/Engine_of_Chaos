@@ -1,0 +1,3 @@
+The battle cursor stutters when automaticaly moving diagonaly. When moving with arrow keys there is no stutter.
+
+blaze animation

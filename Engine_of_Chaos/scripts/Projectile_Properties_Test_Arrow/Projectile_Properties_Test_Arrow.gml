@@ -1,7 +1,7 @@
 function Projectile_Stats_Test_Arrow(_stat){
 	var _sprite = spr_Battered_Arrow_Projectile;
 	var _animation_speed = 0;
-	var _movement_speed = 15;
+	var _movement_speed = 15 / global.xspeed;
 	
 	switch(_stat){
 		case "Sprite": return _sprite break;

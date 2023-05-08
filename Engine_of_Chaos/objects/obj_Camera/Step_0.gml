@@ -2,6 +2,20 @@ if(Pressed_Key("Full_Screen_Button",false)){
     global.Full_Screen = !global.Full_Screen;
     window_set_fullscreen(global.Full_Screen);
 }
+
+if (Pressed_Key("Fastforward",false)){
+	if (global.Fastcheck = false){
+	game_set_speed(601, gamespeed_fps)
+	global.Fastcheck = !global.Fastcheck;
+	}
+	else{game_set_speed(global.FPS_Cap, gamespeed_fps);
+		global.Fastcheck = !global.Fastcheck;
+			}
+}
+
+if (global.FixedFocus = true){ global.camera_speed = camera_speed+1}
+		else { global.camera_speed = camera_speed-1}
+		
 var _target_x = x_pos;
 var _target_y = y_pos;
 if(!halt_x_movement){
@@ -16,30 +30,30 @@ if(!halt_y_movement){
 //================
 if(camera_speed = -1){
     x_pos = _target_x;
-    y_pos = TargetY;
+    y_pos = _target_y;
 }
 else{
     if(x_pos > _target_x){
-        x_pos -= camera_speed;
+        x_pos -= global.camera_speed;
         if(x_pos < _target_x){
             x_pos = _target_x;
         }
     }
     else if(x_pos < _target_x){
-        x_pos += camera_speed;
+        x_pos += global.camera_speed;
         if(x_pos > _target_x){
             x_pos = _target_x;
         }
     }
     
     if(y_pos > _target_y){
-        y_pos -= camera_speed;
+        y_pos -= global.camera_speed;
         if(y_pos < _target_y){
             y_pos = _target_y;
         }
     }
     else if(y_pos < _target_y){
-        y_pos += camera_speed;
+        y_pos += global.camera_speed;
         if(y_pos > _target_y){
             y_pos = _target_y;
         }

@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "AI_Actions",
-    "path": "folders/Scripts/DONE/AI/AI_Actions.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "AI_Cast_Spell",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "AI_Actions",
+    "path": "folders/Scripts/Game_Logic/AI/AI_Actions.yy",
+  },
 }

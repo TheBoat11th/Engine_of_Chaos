@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Chests",
-    "path": "folders/Scripts/DONE/Chests.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "Set_Lootable_Object",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Chests",
+    "path": "folders/Scripts/Game_Logic/Chests.yy",
+  },
 }

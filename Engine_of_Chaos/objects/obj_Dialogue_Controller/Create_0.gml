@@ -19,7 +19,7 @@ allow_speed_up = true; //Do you want to allow the player to be able to speed up 
 wait_for_input = false;//For longer messages, wait for the user to push the select button to continue
 auto_pan_out = false;//do we automatically pan out the dialogue window when done or wait for script call?
 ending_message = false;//are we ending the message and starting the delay countdown?
-end_message_delay = 5 * global.xspeed;//default 'continue' delay.
+end_message_delay = 5;//default 'continue' delay.
 force_end = false;//do we close the dialogue controller without user input?
 
 voice = noone; //sound we play when printing dialogue
@@ -46,3 +46,4 @@ pan_speed = 8 * global.xspeed;
 font_color = c_white;//The color of our font
 dialogue_font = fnt_DialogueFont;//Font we're using
 word_wrap_length = 260;//length in pixels that result in word wrap
+

@@ -2,7 +2,7 @@ function Sprite_Animation(_character,_sprite,_iterations=0,_speed=.0625,_hide_ch
 	if(_iterations >0){
 		_iterations -= 1;	
 	}
-	_character.animation_speed = _speed;//set draw speed
+	_character.animation_speed = _speed / global.xspeed;//set draw speed
 	_character.animation = "Sprite_Animation";//set sprite animation
 	_character.number_of_animations = _iterations;//number of iterations
 	_character.animation_frame = 0;//reset frame to 0

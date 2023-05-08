@@ -9,7 +9,7 @@ function AStar_constructPath(argument0, argument1, argument2, argument3) {
 	// Returns:
 	// path id
 
-	var node,pathList,a,b;
+	var node,pathList,a;
 	node = argument0;
 
 	pathList = ds_list_create();

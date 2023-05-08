@@ -11,7 +11,7 @@ window_x = 8;
 window_y = 8;
 
 //pan_speed = 22;
-pan_speed = 8 * global.xspeed;
+pan_speed = 8;
 window_pan = 0;
 window_width = sprite_get_width(spr_Battle_HUD_Start)+sprite_get_width(spr_Battle_HUD_End);
 max_pan = window_x + window_width;

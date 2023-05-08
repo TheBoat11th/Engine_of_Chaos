@@ -223,6 +223,7 @@ function Default_Battle_Cutscene_Event(){
 	                }
                 
 	                //
+					
                 
 	                if(_damage > 0){//If target took damage
 	                    if(_target.location = "Foreground"){
@@ -240,7 +241,7 @@ function Default_Battle_Cutscene_Event(){
 	                    _target.damage_taken = _damage;
 	                    Heal_Character(target,abs(_damage));
 	                    Grant_Experience(attacker,target,"Heal",abs(_target.damage_healed));
-	                    Play_Sound(sfx_Heal);
+	                    //Play_Sound(sfx_Heal);
 	                }
 	                else{//no damage or healing. Status effect / summoning
 	                    if(_magic_restored > 0){
@@ -314,6 +315,8 @@ function Default_Battle_Cutscene_Event(){
 	            Play_Battle_Animation(_target,"Death",true,true,true);//play death animation
 	            _message += Get_Item_Drops(attacker,target);
 	            Grant_Gold(attacker,target);
+				attacker.kills += 1;
+				target.deaths += 1;
 	            _criteria += 1;
 	        }
         
@@ -381,6 +384,9 @@ function Default_Battle_Cutscene_Event(){
 	        }
 	        with(obj_Battle_Cutscene_Prop){//end all spell loops (spell props delete after final frame)
 	            loop_animation = false;
+				if(instant_destruction){//if we destroy this object immediately on spell controller end.
+					instance_destroy();
+				}
 	        }
 	        performing_aoe = false;
 	        tint_color = draw_color;

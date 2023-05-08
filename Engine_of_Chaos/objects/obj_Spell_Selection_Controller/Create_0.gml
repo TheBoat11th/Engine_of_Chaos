@@ -45,10 +45,10 @@ spell_level = 1;
 //menu_event[0] = 'none';//event for clicking slot 0
 //menu_animated[0] = -1;
 
-pan_speed_up = (max_y_pan / (8 * global.xspeed));//pan speed up
-pan_speed_down = (max_y_pan / (8 * global.xspeed));//pan speed down
-pan_speed_left = (max_x_pan / (8 * global.xspeed));//25;//pan speed left
-pan_speed_right = (max_x_pan / (8 * global.xspeed));//25;//pan speed right
+pan_speed_up = (max_y_pan / 8 / global.xspeed);//pan speed up
+pan_speed_down = (max_y_pan / 8 / global.xspeed);//pan speed down
+pan_speed_left = (max_x_pan / 8 / global.xspeed);//25;//pan speed left
+pan_speed_right = (max_x_pan / 8 / global.xspeed);//25;//pan speed right
 
 //============================
 //Post Modifyable Calculations

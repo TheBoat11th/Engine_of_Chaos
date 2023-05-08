@@ -16,6 +16,6 @@ function Enable_Spell_Cast_Flash(_character,_speed = 3,_inColor = c_black, _outC
 	_character.shader_tolerance[3] = 0;//a
 
 	_character.spell_cast = true;
-	_character.flash_speed = _speed;
+	_character.flash_speed = _speed * global.xspeed;
 	_character.shader_type = "sh_Spell_Cast_Flash";//shader to use
 }

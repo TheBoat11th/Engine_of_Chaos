@@ -9,13 +9,13 @@ weapon_object = noone;
 
 location = "Foreground";
 position = "Right";
-x_pan_speed = 15;
+x_pan_speed = 15 / global.xspeed;
 max_x_pan = 176;
 x_pan = max_x_pan;
 pan_direction = "none";
 on_screen = false;
 
-max_hit_timer = 30;
+max_hit_timer = 30 * global.xspeed;
 hit_timer = 0;
 
 shake_x = 0;
@@ -51,7 +51,7 @@ flash_timer = 0;
 fade = false;
 alpha = 1;
 end_alpha = 1;
-fade_speed = .1;
+fade_speed = .1 / global.xspeed;
 
 //Battle HUD
 display_HUD = false;//do we draw the hud?
@@ -59,3 +59,4 @@ font_color = c_white;//The color of our font
 menu_font = fnt_MenuFont;//Font we're using
 display_type = "Main_HUD";//Where to draw the HUD
 window_pan = 0;//Not used, needed to re-use draw script
+

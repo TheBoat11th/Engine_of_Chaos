@@ -6,7 +6,7 @@ function Create_Screen_Fade(_color,_alpha,_stop,_speed,_direction,_object,_depth
 	    fade_color = _color;
 	    fade_alpha = _alpha;
 	    fade_stop = _stop;
-	    fade_speed = _speed/global.xspeed;
+	    fade_speed = _speed / global.xspeed;
 	    fade_direction = _direction;
 	    current_object = _object;
 		if(depth != _depth){

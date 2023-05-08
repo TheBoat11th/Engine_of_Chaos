@@ -4,7 +4,7 @@ function Flash_Battle_Cutscene() {
 
 	obj_Battle_Cutscene_Controller.screen_flash = true;
 	obj_Battle_Cutscene_Controller.border_color = _color;
-	obj_Battle_Cutscene_Controller.flash_timer = _time;
+	obj_Battle_Cutscene_Controller.flash_timer = _time * global.xspeed;
 
 
 

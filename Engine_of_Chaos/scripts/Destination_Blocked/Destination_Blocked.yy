@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Movement",
-    "path": "folders/Scripts/DONE/Characters/Character_Functions/Movement.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "Destination_Blocked",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Movement",
+    "path": "folders/Scripts/Game_Logic/Characters/Character_Functions/Movement.yy",
+  },
 }

@@ -5,7 +5,7 @@ play_pan_sound = false;
 
 max_pan = (floor(Get_Camera_Width() / 2) + 300);
 window_pan = max_pan;
-pan_speed = (max_pan / (12 * global.xspeed));
+pan_speed = (max_pan / 12 / global.xspeed);
 allow_interaction = false;
 
 show_markers = true;

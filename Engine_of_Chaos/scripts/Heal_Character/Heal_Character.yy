@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Battle_Damage_Functions",
-    "path": "folders/Scripts/DONE/Battle_Damage_Functions.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "Heal_Character",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Battle_Damage_Functions",
+    "path": "folders/Scripts/Game_Logic/Battle_Damage_Functions.yy",
+  },
 }

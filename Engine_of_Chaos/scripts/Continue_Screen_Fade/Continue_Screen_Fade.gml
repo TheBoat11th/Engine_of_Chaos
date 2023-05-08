@@ -3,7 +3,7 @@ function Continue_Screen_Fade(_stop,_speed,_direction,_object){
 	//Assign new variables.
 	with(obj_Screen_Fade_Controller){
 	    fade_stop = _stop;
-	    fade_speed = _speed/global.xspeed;
+	    fade_speed = _speed / global.xspeed;
 	    fade_direction = _direction;
 	    current_object = _object;
 	}

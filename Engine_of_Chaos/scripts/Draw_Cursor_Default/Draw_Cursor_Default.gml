@@ -1,4 +1,5 @@
 function Draw_Cursor_Default() {
+	layer = 300;
 	var i = 0;
 	var _row = 0;
 	var _invert = false;

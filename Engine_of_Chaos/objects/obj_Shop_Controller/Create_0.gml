@@ -14,8 +14,8 @@ current_npc = noone;
 lookup_type = "Global";
 
 //input repeat delays
-max_input_delay = 40 * global.xspeed;//on key press, set timer to 40
-min_input_delay = 5 * global.xspeed;//on continued hold, set timer to 5
+max_input_delay = 40;//on key press, set timer to 40
+min_input_delay = 5;//on continued hold, set timer to 5
 input_delay = max_input_delay;
 auto_move = false;
 
@@ -25,7 +25,7 @@ play_pan_sound = false;
 
 arrow_flash = 0;
 arrow_flash_timer = 0;
-arrow_flash_speed = 10;
+arrow_flash_speed = 10 * global.xspeed;
 
 cursor_flash = 0;
 cursor_flash_timer = 0;

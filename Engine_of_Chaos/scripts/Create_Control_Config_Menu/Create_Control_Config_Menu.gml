@@ -21,7 +21,7 @@ function Create_Control_Config_Menu(_object) {
 	    menu_options[6] = "Inspect";
 	    menu_options[7] = "Main Menu";
 		menu_options[8] = "Fastforward";
-		menu_options[9] = "EndFastforward";
+		menu_options[9] = "Fullscreen";
     
 	    menu_locked[0] = false;//Certain slots can be 'locked'
 	    menu_locked[1] = false;

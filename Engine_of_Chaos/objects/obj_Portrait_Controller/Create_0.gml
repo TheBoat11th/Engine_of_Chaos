@@ -11,8 +11,8 @@ talk_speed_modifier = .08 / global.xspeed;//multiply this by speed to get animat
 talking = false;//is the portrait talking?
 
 blink_frame = 0;//frame of blink animation
-blink_speed = 1 / (global.xspeed * 2);//blink animation speed
-blink_min = 40 * global.xspeed;//mimimum wait time between blinks
+blink_speed = 1 / global.xspeed;//blink animation speed
+blink_min = 20 * global.xspeed;//mimimum wait time between blinks
 blink_max = 180 * global.xspeed;//maximum wait time between blinks
 blink_timer = random_range(blink_min,blink_max);//set blink timer
 blinking = false;//is the portrait blinking?

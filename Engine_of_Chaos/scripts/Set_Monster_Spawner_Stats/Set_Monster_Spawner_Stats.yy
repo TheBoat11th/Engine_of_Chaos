@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Monster_Spawners",
-    "path": "folders/Scripts/DONE/Monster_Spawners.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "Set_Monster_Spawner_Stats",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Monster_Spawners",
+    "path": "folders/Scripts/Game_Logic/Monster_Spawners.yy",
+  },
 }

@@ -1,10 +1,10 @@
 function Battle_01_Intro_Cutscene() {
 	var _lookup = "Local";
-	var _jason = Get_Character("Jason","Default");
-	var _max = Get_Character("Max","Default");
-	var _ciera = Get_Character("Ciera","Default");
+	var _jason = Get_Character("AU_Jason","Default");
+	var _max = Get_Character("AU_Max","Default");
+	var _ciera = Get_Character("AU_Ciera","Default");
 	var _wolf;
-	with(obj_Wolf){
+	with(obj_AU_Wolf){
 	    if(ai_script_ID = "AI_Battle_01_Wolf_01"){
 	        _wolf = id;
 	    }
@@ -37,7 +37,7 @@ function Battle_01_Intro_Cutscene() {
 	    break;
 	    case 2:
 	        state += 1;
-	        alarm[0] = 30;
+	        alarm[0] = 30 * global.xspeed;
 	    break;
 	    case 3:
 	        state += 1;
@@ -45,7 +45,7 @@ function Battle_01_Intro_Cutscene() {
 	    break;
 	    case 4:
 	        state += 1;
-	        alarm[0] = 30;
+	        alarm[0] = 30 * global.xspeed;
 	    break;
 	    case 5:
 	        state += 1;
@@ -53,7 +53,7 @@ function Battle_01_Intro_Cutscene() {
 	    break;
 	    case 6:
 	        state += 1;
-	        alarm[0] = 30;
+	        alarm[0] = 30 * global.xspeed;
 	    break;
 	    case 7:
 	        state += 1;
@@ -61,7 +61,7 @@ function Battle_01_Intro_Cutscene() {
 	    break;
 	    case 8:
 	        state += 1;
-	        alarm[0] = 30;
+	        alarm[0] = 30 * global.xspeed;
 	    break;
 	    case 9:
 	        state += 1;
@@ -93,38 +93,22 @@ function Battle_01_Intro_Cutscene() {
 	    break;
 	    case 13:
 	        state += 1;
-	        Move_Character(_wolf,"Right",1,6,"Right",.5);
+	        Move_Character(_wolf,"Right",5,6,"Right",.5);
 	    break;
-		case 14:
-	        state += 1;
-	        Move_Character(_wolf,"Right",1,6,"Right",.5);
-	    break;
-		case 15:
-	        state += 1;
-	        Move_Character(_wolf,"Right",1,6,"Right",.5);
-	    break;
-		case 16:
-	        state += 1;
-	        Move_Character(_wolf,"Right",1,6,"Right",.5);
-	    break;
-		case 17:
-	        state += 1;
-	        Move_Character(_wolf,"Right",1,6,"Right",.5);
-	    break;		
-	    case 18:
+	    case 14:
 	        state += 1;
 	        Move_Character(_wolf,"Up",1,6,"Up",.5);
 	    break;
-	    case 19:
+	    case 15:
 	        state += 1;
 	        Face_Direction(_wolf,"Left");
 	        Shudder(_wolf);
 	    break;
-	    case 20:
+	    case 16:
 	        state += 1;
 	        Create_Dialogue(noone,sfx_Dialogue07,"Grrrrr.",id,true,true);//portrait, voice, message,object,arrow,pan
 	    break;
-	    case 21:
+	    case 17:
 	        state += 1;
 	        if(_max != noone){
 	            Shudder(_max);
@@ -133,7 +117,7 @@ function Battle_01_Intro_Cutscene() {
 	            event_perform(ev_other,ev_user0);
 	        }
 	    break;
-	    case 22:
+	    case 18:
 	        state += 1;
 	        if(_max = noone){
 	            _lookup = "Global";
@@ -141,7 +125,7 @@ function Battle_01_Intro_Cutscene() {
 	        }
 	        Create_Character_Dialogue(_lookup,_max,"Hey look!^ It's a wolf!",id,true,true);//portrait, voice, message,object,arrow,pan
 	    break;
-	    case 23:
+	    case 19:
 	        state += 1;
 	        if(_ciera = noone){
 	            _lookup = "Global";
@@ -149,15 +133,15 @@ function Battle_01_Intro_Cutscene() {
 	        }
 	        Create_Character_Dialogue(_lookup,_ciera,"Don't they have a bounty on those right now?",id,true,true);//portrait, voice, message,object,arrow,pan
 	    break;
-	    case 24:
+	    case 20:
 	        state += 1;
 	        Nod_Head(_jason);
 	    break;
-	    case 25:
+	    case 21:
 	        state += 1;
 	        Create_Character_Dialogue("Local",_jason,"That's true,^ and we could use some gold,^ but wolves are pack hunters.% It might be a bit wiser to sneak around them.% As long as we don't get too close to their den,^ we should be fine.",id,true,true);//portrait, voice, message,object,arrow,pan
 	    break;
-	    case 26:
+	    case 22:
 	        state += 1;
 	        if(_max != noone){
 	            Shudder(_max);
@@ -166,7 +150,7 @@ function Battle_01_Intro_Cutscene() {
 	            event_perform(ev_other,ev_user0);
 	        }
 	    break;
-	    case 27:
+	    case 23:
 	        state += 1;
 	        if(_max = noone){
 	            _lookup = "Global";
@@ -174,15 +158,15 @@ function Battle_01_Intro_Cutscene() {
 	        }
 	        Create_Character_Dialogue(_lookup,_max,"Psh.^ Where's the fun in that?",id,true,true);//portrait, voice, message,object,arrow,pan
 	    break;
-	    case 28:
+	    case 24:
 	        state += 1;
 	        Shake_Head(_jason);
 	    break;
-	    case 29:
+	    case 25:
 	        state += 1;
 	        Create_Character_Dialogue("Local",_jason,"Well whatever the case,^ we better decide quick!",id,true,true);//portrait, voice, message,object,arrow,pan
 	    break;
-	    case 30:
+	    case 26:
 	        state += 1;
 	        _jason.cutscene_mode = false;
 	        _wolf.cutscene_mode = false;

@@ -12,8 +12,7 @@ function Swap_Duplicate_Controls(_ignore) {
 	    case "Inspect": _swap = global.Inspect_Button; break;
 	    case "Main Menu": _swap = global.Main_Menu_Button; break;
 		case "Fastforward": _swap = global.Fastforward; break;
-		case "EndFastforward": _swap = global.EndFastforward; break;
-		
+		case "FullScreen": _swap = global.Full_Screen_Button; break;
 	}
 
 	switch(keyboard_lastkey){
@@ -26,6 +25,6 @@ function Swap_Duplicate_Controls(_ignore) {
 	    case global.Inspect_Button: global.Inspect_Button = _swap; break;
 	    case global.Main_Menu_Button: global.Main_Menu_Button = _swap; break;
 		case global.Fastforward: global.Fastforward = _swap; break;
-		case global.EndFastforward: global.EndFastforward = _swap; break;
+		case global.Full_Screen_Button: global.Full_Screen_Button = _swap; break;
 	}
 }

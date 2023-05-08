@@ -19,7 +19,7 @@ state = "Naming_Character";
 portrait_controller = noone;//link to portrait controller
 
 //input repeat delays
-max_input_delay = 40 * global.xspeed;//on key press, set timer to 40
+max_input_delay = 20 * global.xspeed;//on key press, set timer to 20
 min_input_delay = 5 * global.xspeed;//on continued hold, set timer to 5
 input_delay = max_input_delay;
 auto_move = false;

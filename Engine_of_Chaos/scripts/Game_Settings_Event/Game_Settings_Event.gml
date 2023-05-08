@@ -15,6 +15,7 @@ function Game_Settings_Event() {
 				case 5: old_setting = global.Pixel_Divider; break;
 				case 6: old_setting = global.Vsync; break;
 				case 7: old_setting = global.FPS_Cap; break;
+				case 8: old_setting = global.FixedFocus; break;
 	        }
 	        Play_Sound(sfx_Menu_Select);
 	    }
@@ -36,6 +37,7 @@ function Game_Settings_Event() {
 				case 5: Increase_Pixel_Divider(); Play_Sound(sfx_Menu_Move); break;//Pixel Divider Control
 				case 6: Toggle_Vsync(); Play_Sound(sfx_Menu_Move); break;//Toggle Vsync
 				case 7: Increase_FPS_Cap(); Play_Sound(sfx_Menu_Move); break;//FPS Cap Control
+				case 8: Toggle_Fixed_Focus(); Play_Sound(sfx_Menu_Move); break;//Toggle Fixed Focus Camera
 	        }
 	        Update_Game_Settings_Array();
 	    }
@@ -49,6 +51,7 @@ function Game_Settings_Event() {
 				case 5: Decrease_Pixel_Divider(); Play_Sound(sfx_Menu_Move); break;//Pixel Divider Control
 				case 6: Toggle_Vsync(); Play_Sound(sfx_Menu_Move); break;//Toggle Vsync
 				case 7: Decrease_FPS_Cap(); Play_Sound(sfx_Menu_Move); break;//FPS Cap Control
+				case 8: Toggle_Fixed_Focus(); Play_Sound(sfx_Menu_Move); break;//Toggle Fixed Focus Camera
 	        }
 	        Update_Game_Settings_Array();
 	    }
@@ -67,6 +70,7 @@ function Game_Settings_Event() {
 				case 5: global.Pixel_Divider = old_setting; break;
 				case 6: global.Vsync = old_setting; break;
 				case 7: global.FPS_Cap = old_setting; break;
+				case 8: global.FixedFocus = old_setting; break;
 	        }
 	        Update_Game_Settings_Array();
 	        state = "Selecting_Option";

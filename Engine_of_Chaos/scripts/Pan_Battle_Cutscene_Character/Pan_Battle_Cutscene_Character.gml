@@ -6,7 +6,7 @@ function Pan_Battle_Cutscene_Character() {
 
 	with(_object){
 	    if(pan_direction = "in"){
-	        x_pan = max_x_pan * global.xspeed;
+	        x_pan = max_x_pan;
 	        display_HUD = true;
 	    }
 	    else if(pan_direction = "in_long"){

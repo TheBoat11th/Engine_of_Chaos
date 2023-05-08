@@ -25,7 +25,7 @@ window_y = (Get_Camera_Height() - (sprite_get_height(spr_Shop_Gold_Window) + 8 )
 
 play_pan_sound = false;
 pan_direction = "none";
-pan_speed = 8 * global.xspeed;
+pan_speed = 8;
 
 max_pan = (sprite_get_width(spr_Shop_Gold_Window) + 8);
 pan = max_pan;

@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Effects",
-    "path": "folders/Scripts/DONE/Characters/Character_Stats/Get_Stat_Functions/Effects.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "Get_Character_Status_Paralysis",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Effects",
+    "path": "folders/Scripts/Game_Logic/Characters/Character_Stats/Get_Stat_Functions/Effects.yy",
+  },
 }

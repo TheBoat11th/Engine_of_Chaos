@@ -1,4 +1,4 @@
-function Move_Character_Town(_x,_y,_direction,_tiles,_speed,_animation_speed,_looking = _direction) {
+function Move_Character_Town(_x,_y,_direction,_tiles,_speed,_animation_speed,_looking = _direction,_ignore_stairs = false) {
 	Face_Direction(id,_looking);//tells character to look in the set direction
 	movement_iterations = _tiles;
 	
@@ -13,10 +13,10 @@ function Move_Character_Town(_x,_y,_direction,_tiles,_speed,_animation_speed,_lo
 
 	var stair = noone;//stair object pointer
 
-	if(_direction = "Left"){//if we're walking left, and there's a stair object there
+	if(_direction = "Left" && !_ignore_stairs){//if we're walking left, and there's a stair object there
 	    stair = instance_position(_x,_y,obj_Stair_Left_Parent);
 	}
-	else if(_direction = "Right"){//if we're walking right, and there's a stair object there
+	else if(_direction = "Right" && !_ignore_stairs){//if we're walking right, and there's a stair object there
 	    stair = instance_position(_x,_y,obj_Stair_Right_Parent);
 	}
 
@@ -53,14 +53,13 @@ function Move_Character_Town(_x,_y,_direction,_tiles,_speed,_animation_speed,_lo
 	//===============
 	else{//normal movement
 	    if(global.In_Battle && !cutscene_mode){
-	        Play_Sound(sfx_Walk); }
+	        Play_Sound(sfx_Walk);
+	    }
 	    moving = true;// Lets start moving
-	
-		move_speed = _speed / global.xspeed;
-		//move_speed = _speed;//set speed to whatever the player's walk speed is
-	    move_timer = global.Tile_Size;// Ready moveTimer for countdown
-	    speed_x = -round(x-_x)/(global.Tile_Size/move_speed);
-	    speed_y = -round(y-_y)/(global.Tile_Size/move_speed);
+	    move_speed = _speed;//set speed to whatever the player's walk speed is
+	    move_timer = global.Tile_Size * round(global.xspeed);// Ready moveTimer for countdown
+	    speed_x = -round(x-_x)/(global.Tile_Size/move_speed * round(global.xspeed));
+	    speed_y = -round(y-_y)/(global.Tile_Size/move_speed * round(global.xspeed));
 	    image_speed = _animation_speed;//set walk animation speed
 	    projected_x = _x;//set projected x
 	    projected_y = _y;//set projected y

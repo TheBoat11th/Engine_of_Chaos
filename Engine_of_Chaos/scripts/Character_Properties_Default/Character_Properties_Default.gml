@@ -11,7 +11,7 @@ function Town_Character_Stats_Default(_character){
 //Overworld Sprite Setup
 //======================
 function Get_Appearance_Default(_lookup_type,_character,_stat){
-	var _overworld_sprite = spr_Chaos_Overworld; 
+	var _overworld_sprite = spr_AU_Chaos_Overworld; 
 	var _portrait = noone;
 	var _voice = sfx_Dialogue01;
 	var _battle_sprite = spr_Blank_Sprite;
@@ -34,7 +34,7 @@ function Get_Battle_Sprite_Stats_Default(_animation,_stat){
 	var _parent_animation = _animation;
 	var _location = "Background";
 	var _sprite = spr_Blank_Sprite;
-	var _animation_speed = .0625 / global.xspeed;
+	global._animation_speed = .0625 / global.xspeed;
 	var _projectile_type = "Weapon";
 	var _projectile_path = "Default";
 	var _event_type = "Default";

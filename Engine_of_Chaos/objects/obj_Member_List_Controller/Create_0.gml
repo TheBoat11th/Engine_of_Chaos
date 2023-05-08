@@ -42,7 +42,6 @@ selected_item_slot = 0;
 //input repeat delays
 max_input_delay = 40 * global.xspeed;//on key press, set timer to 40
 min_input_delay = 5 * global.xspeed;//on continued hold, set timer to 5
-//image_speed = .0625
 input_delay = max_input_delay;
 auto_move = false;
 

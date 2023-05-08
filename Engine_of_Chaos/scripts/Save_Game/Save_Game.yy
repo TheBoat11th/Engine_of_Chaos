@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Church_Functions",
-    "path": "folders/Scripts/DONE/Church/Church_Functions.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "Save_Game",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Game_Data",
+    "path": "folders/Scripts/Game_Logic/Utility/Save_And_Load/Game_Data.yy",
+  },
 }

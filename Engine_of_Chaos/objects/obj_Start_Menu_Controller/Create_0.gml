@@ -18,7 +18,7 @@ arrow_position = 0;//array position of the selection arrow
 start_index = 0;//the first menu option to be shown (Scroll bar)
 
 //input repeat delays
-max_input_delay = 40 * global.xspeed;//on key press, set timer to 40
+max_input_delay = 20 * global.xspeed;//on key press, set timer to 40
 min_input_delay = 5 * global.xspeed;//on continued hold, set timer to 5
 input_delay = max_input_delay;
 auto_move = false;
@@ -59,10 +59,11 @@ menu_options[3] = "Options";
 
 menu_locked[0] = false;//Certain slots can be 'locked'
 menu_locked[1] = true;//You cant choose load game until a save is created.
+menu_locked[2] = false;//Challenges temporarilly disabled.
 if(Has_Existing_Save()){//if a save exists,
     menu_locked[1] = false;//allow loading
+	//menu_locked[2] = false;//enable challenges
 }
-menu_locked[2] = true;//Challenges temporarilly disabled.
 menu_locked[3] = false;
 
 //Lock the load game button if no save exists

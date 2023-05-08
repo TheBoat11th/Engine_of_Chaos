@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Effects",
-    "path": "folders/Scripts/DONE/Characters/Character_Stats/Set_Stat_Functions/Effects.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "Set_Character_Status_Sleep",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Effects",
+    "path": "folders/Scripts/Game_Logic/Characters/Character_Stats/Set_Stat_Functions/Effects.yy",
+  },
 }

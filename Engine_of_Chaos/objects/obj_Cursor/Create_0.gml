@@ -1,4 +1,4 @@
-cursor_type = "Default";
+cursor_type = "Square";
 cursor_size = 1;
 movement_type = "Cursor";
 allow_interaction = false;
@@ -6,7 +6,7 @@ inspecting_character = false;
 visible = false;
 
 //Movement
-cursor_move_speed = global.BattleCursorSpeed / global.xspeed;
+cursor_move_speed = 4 / global.xspeed;
 moving = false;
 move_speed = 0;
 move_timer = 0;
@@ -15,7 +15,7 @@ speed_y = 0;
 
 //pathfinding
 pathfinding = false;//are we currently moving a path?
-pathfinding_speed = global.BattleCursorPathfinding / global.xspeed;//speed when moving on a path
+pathfinding_speed = 6 / global.xspeed;//speed when moving on a path
 pathfind_loop = false;//for transfer tiles
 pathfinding_end_action = "none";//what do we do during 'end of path' event?
 

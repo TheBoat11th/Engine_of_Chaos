@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Item_Functions",
-    "path": "folders/Scripts/DONE/Items/Item_Functions.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "Give_Faction_Item",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Item_Functions",
+    "path": "folders/Scripts/Game_Logic/Items/Item_Functions.yy",
+  },
 }

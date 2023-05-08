@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Portrait_Functions",
-    "path": "folders/Scripts/DONE/Dialogue/Portrait_Functions.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "Create_Portrait_Controller",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Portrait_Functions",
+    "path": "folders/Scripts/Game_Logic/UI/Dialogue/Portrait_Functions.yy",
+  },
 }

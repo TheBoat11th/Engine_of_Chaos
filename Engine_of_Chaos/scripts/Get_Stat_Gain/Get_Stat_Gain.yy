@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Level_Schemes",
-    "path": "folders/Scripts/DONE/Level_Schemes.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "Get_Stat_Gain",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Level_Schemes",
+    "path": "folders/Scripts/Game_Logic/Level_Schemes.yy",
+  },
 }

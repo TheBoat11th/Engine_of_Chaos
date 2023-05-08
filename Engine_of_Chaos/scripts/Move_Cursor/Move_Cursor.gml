@@ -11,8 +11,8 @@ function Move_Cursor(_destination_x,_destination_y,_direction,_speed){
 	        moving = true;// Lets start moving
 	        move_speed = _speed;//set speed to whatever the player's walk speed is
 	        move_timer = global.Tile_Size;// Ready moveTimer for countdown
-	        speed_x = -round(x-_destination_x)/(global.Tile_Size/move_speed);
-	        speed_y = -round(y-_destination_y)/(global.Tile_Size/move_speed);
+	        speed_x = round(x-_destination_x)/(global.Tile_Size/move_speed);
+	        speed_y = round(y-_destination_y)/(global.Tile_Size/move_speed);
 	    }
 	}
 }

@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Factions",
-    "path": "folders/Scripts/DONE/Factions.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "Get_Faction_Stats",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Factions",
+    "path": "folders/Scripts/Game_Logic/Factions.yy",
+  },
 }

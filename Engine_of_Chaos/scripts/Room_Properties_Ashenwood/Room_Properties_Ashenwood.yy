@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Room_Properties",
-    "path": "folders/Scripts/Room_Properties.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "Room_Properties_Ashenwood",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Ashenwood",
+    "path": "folders/Scripts/Room_Properties/Ashenwood.yy",
+  },
 }

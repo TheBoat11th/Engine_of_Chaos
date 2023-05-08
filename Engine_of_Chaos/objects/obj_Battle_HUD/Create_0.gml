@@ -14,7 +14,7 @@ window_width = 0;
 
 max_pan = 0;
 window_pan = 0;
-pan_speed = 8 * global.xspeed;
+pan_speed = 8;
 
 action = "none";
 

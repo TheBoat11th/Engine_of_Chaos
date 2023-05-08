@@ -1,7 +1,7 @@
 function Max_With_Milkshake_Cutscene(){
 	var _jason = player_trigger;
-	var _max = Get_Character("Max","Default");
-	var _ciera = Get_Character("Ciera","Default");
+	var _max = Get_Character("AU_Max","Default");
+	var _ciera = Get_Character("AU_Ciera","Default");
 	var _milkshake = Get_Character("Milkshake","Default");
 
 	switch(state){
@@ -64,7 +64,7 @@ function Max_With_Milkshake_Cutscene(){
 	        _max.previous_x = _jason.x;
 	        _max.previous_y = _jason.y;
 	        _milkshake.allow_wander = true;
-	        _milkshake.dialogue_ID = "Cow";
+	        _milkshake.dialogue_ID = "Generic_Cow";
 	        global.Story_State += 1;
 	        instance_destroy();
 	    break;

@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Dialogue_Functions",
-    "path": "folders/Scripts/DONE/Dialogue/Dialogue_Functions.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "Create_Dialogue",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Dialogue_Functions",
+    "path": "folders/Scripts/Game_Logic/UI/Dialogue/Dialogue_Functions.yy",
+  },
 }
