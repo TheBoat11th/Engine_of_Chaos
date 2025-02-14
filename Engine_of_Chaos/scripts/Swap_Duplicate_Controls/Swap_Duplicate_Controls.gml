@@ -2,7 +2,7 @@ function Swap_Duplicate_Controls(_ignore) {
 	//ensure we dont have 2 controls bound to the same button
 	var _swap;
 
-	switch(_ignore){
+switch(_ignore){
 	    case "Up": _swap = global.Up_Button; break;
 	    case "Down": _swap = global.Down_Button; break;
 	    case "Left": _swap = global.Left_Button; break;
@@ -11,8 +11,8 @@ function Swap_Duplicate_Controls(_ignore) {
 	    case "Cancel": _swap = global.Cancel_Button; break;
 	    case "Inspect": _swap = global.Inspect_Button; break;
 	    case "Main Menu": _swap = global.Main_Menu_Button; break;
-		case "Fastforward": _swap = global.Fastforward; break;
-		case "FullScreen": _swap = global.Full_Screen_Button; break;
+		case "Fast Forward": _swap = global.Fast_Forward; break;
+		case "Full Screen": _swap = global.Full_Screen_Button; break;
 	}
 
 	switch(keyboard_lastkey){
@@ -24,7 +24,7 @@ function Swap_Duplicate_Controls(_ignore) {
 	    case global.Cancel_Button: global.Cancel_Button = _swap; break;
 	    case global.Inspect_Button: global.Inspect_Button = _swap; break;
 	    case global.Main_Menu_Button: global.Main_Menu_Button = _swap; break;
-		case global.Fastforward: global.Fastforward = _swap; break;
+		case global.Fast_Forward: global.Fast_Forward = _swap; break;
 		case global.Full_Screen_Button: global.Full_Screen_Button = _swap; break;
 	}
 }

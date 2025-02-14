@@ -114,7 +114,7 @@ function Old_Rope_Cutscene() {
 		break;
 		case 21:
 			state += 1;
-			alarm[0] = 30 * global.xspeed;
+			alarm[0] = 30;
 		break;
 		case 22:
 			state += 1;

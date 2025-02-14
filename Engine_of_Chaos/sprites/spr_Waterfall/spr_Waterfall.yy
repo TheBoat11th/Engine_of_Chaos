@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Overworld_Objects",
-    "path": "folders/Sprites/Overworld_Objects.yy",
+    "name": "obsolete",
+    "path": "folders/Sprites/obsolete.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

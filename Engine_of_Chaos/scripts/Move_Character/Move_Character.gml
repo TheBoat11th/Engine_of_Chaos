@@ -8,22 +8,22 @@ function Move_Character(_character,_direction,_tiles,_speed,_looking = _directio
 	switch(_direction){
 	    case "Up":
 	        with(_character){
-	            Move_Character_Town(x,y-(global.Tile_Size),"Up",_tiles,_speed,_animation_speed,_looking,_ignore_stairs);
+	            Move_Character_Town(x,y-(global.Tile_Size),"Up",_tiles,_speed/global.xspeed,_animation_speed,_looking,_ignore_stairs);
 	        }
 	    break;
 	    case "Down":
 	        with(_character){
-	            Move_Character_Town(x,y+(global.Tile_Size),"Down",_tiles,_speed,_animation_speed,_looking,_ignore_stairs);
+	            Move_Character_Town(x,y+(global.Tile_Size),"Down",_tiles,_speed/global.xspeed,_animation_speed,_looking,_ignore_stairs);
 	        }
 	    break;
 	    case "Left":
 	        with(_character){
-	            Move_Character_Town(x-global.Tile_Size,y,"Left",_tiles,_speed,_animation_speed,_looking,_ignore_stairs);
+	            Move_Character_Town(x-global.Tile_Size,y,"Left",_tiles,_speed/global.xspeed,_animation_speed,_looking,_ignore_stairs);
 	        }
 	    break;
 	    case "Right":
 	        with(_character){
-	            Move_Character_Town(x+global.Tile_Size,y,"Right",_tiles,_speed,_animation_speed,_looking,_ignore_stairs);
+	            Move_Character_Town(x+global.Tile_Size,y,"Right",_tiles,_speed/global.xspeed,_animation_speed,_looking,_ignore_stairs);
 	        }
 	    break;
 	}

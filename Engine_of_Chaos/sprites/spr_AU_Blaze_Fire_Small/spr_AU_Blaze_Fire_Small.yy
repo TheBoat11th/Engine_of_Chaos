@@ -33,8 +33,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "AU_Spells",
-    "path": "folders/Sprites/Battle_Cutscenes/Spell_Animations/AU_Spells.yy",
+    "name": "obsolete",
+    "path": "folders/Sprites/obsolete.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

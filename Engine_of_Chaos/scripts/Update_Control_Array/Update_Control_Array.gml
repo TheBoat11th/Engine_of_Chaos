@@ -7,6 +7,6 @@ function Update_Control_Array() {
 	settings_array[5] = global.Cancel_Button;
 	settings_array[6] = global.Inspect_Button;
 	settings_array[7] = global.Main_Menu_Button;
-	settings_array[8] = global.Fastforward;
+	settings_array[8] = global.Fast_Forward;
 	settings_array[9] = global.Full_Screen_Button;
 }

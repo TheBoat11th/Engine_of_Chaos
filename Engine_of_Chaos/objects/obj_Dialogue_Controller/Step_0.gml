@@ -32,7 +32,7 @@ else if (scrolling){
     if(y_scroll <= 0){
         y_scroll = 0;
         scrolling = false;
-        alarm[0] = 1;
+        alarm[0] = 1 * global.xspeed;
     }
 }
 
@@ -57,15 +57,15 @@ if(ending_message){
 //==================//
 else if(!printing){//if current character is more than the amount in the current message (if we are at the end of the message)
     if(display_arrow||wait_for_input){//Arrow flash timer
-        arrow_timer -= 1 / global.xspeed;
+        arrow_timer -= 1;
         if(arrow_timer <= 0 ){
             if(arrow_state = 1){
                 arrow_state = 0;//turn arrow off
-                arrow_timer = 20;
+                arrow_timer = 20 * global.xspeed;
             }
             else{
                 arrow_state = 1;//turn arrow on
-                arrow_timer = 20;
+                arrow_timer = 20 * global.xspeed;
             }
         }
     }
@@ -92,12 +92,12 @@ else if(!printing){//if current character is more than the amount in the current
 
 //Takes care of printing out the message letter by letter based on speed.
 if(printing){
-    print_delay -= 1 / global.xspeed;
+    print_delay -= 1;
     if(print_delay <= 0){
         if(!scrolling){
         
             var chat_speed, temp, hold;
-            hold = min(keyboard_check(global.Inspect_Button)+keyboard_check(global.Select_Button)+keyboard_check(global.Cancel_Button)+keyboard_check(global.Up_Button)+keyboard_check(global.Down_Button)+keyboard_check(global.Left_Button)+keyboard_check(global.Right_Button)+keyboard_check(global.Inspect_Button),1) * allow_speed_up; //hold is true or false if we hold 'Z' or not and if we allow the player to speed up text.
+            hold = min(keyboard_check(global.Inspect_Button)+keyboard_check(global.Select_Button)+keyboard_check(global.Cancel_Button)+keyboard_check(global.Up_Button)+keyboard_check(global.Down_Button)+keyboard_check(global.Left_Button)+keyboard_check(global.Right_Button)+keyboard_check(global.Inspect_Button),1) * (allow_speed_up); //hold is true or false if we hold 'Z' or not and if we allow the player to speed up text.
             chat_speed = (global.Dialogue_Speed+(2*hold)); //increase speed based on hold
             prints_per_step = max((chat_speed -5),1);//print out x letters per step based on speed. Minimum value of 1 
             temp = "";//default to empty, just so tests dont break
@@ -155,7 +155,7 @@ if(printing){
                         if(portrait_controller != noone){
                             portrait_controller.talking = false;
                         }
-                        print_delay = 30; 
+                        print_delay = 30 * global.xspeed;
                         prints_per_step = 0;
                         exit;
                     }
@@ -254,13 +254,13 @@ if(printing){
             
             //Display a new letter in x steps based on speed.
             switch(chat_speed){
-                case 1: print_delay = 6; break;
-                case 2: print_delay = 5; break;
-                case 3: print_delay = 4; break;
-                case 4: print_delay = 3; break;
-                case 5: print_delay = 2; break;
-                case 6: print_delay = 1; break;
-                default: print_delay = 1; break;
+                case 1: print_delay = 6 * global.xspeed; break;
+                case 2: print_delay = 5 * global.xspeed; break;
+                case 3: print_delay = 4 * global.xspeed; break;
+                case 4: print_delay = 3 * global.xspeed; break;
+                case 5: print_delay = 2 * global.xspeed; break;
+                case 6: print_delay = 1 * global.xspeed; break;
+                default: print_delay = 1 * global.xspeed; break;
             }
         }
     }

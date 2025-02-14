@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "ShiningForceII_Galam",
-  "bbox_bottom": 2191,
-  "bbox_left": 8,
-  "bbox_right": 1279,
-  "bbox_top": 8,
+  "bbox_bottom": 1061,
+  "bbox_left": 15,
+  "bbox_right": 539,
+  "bbox_top": 74,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -15,9 +15,9 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"98f78b24-170a-43ff-89ce-3f4e15bd2229",},
   ],
-  "gridX": 0,
-  "gridY": 0,
-  "height": 2192,
+  "gridX": 24,
+  "gridY": 24,
+  "height": 1096,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"52ba3979-c69e-48c6-9fc2-83cfe216a39b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "obsolete",
+    "path": "folders/Sprites/obsolete.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1280,
+  "width": 640,
 }

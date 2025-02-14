@@ -7,7 +7,7 @@ pan_direction = "none";//global Pan flag "in" or "out", 'none' means it's not pa
 
 talk_frame = 0;//frame of talk animation
 talk_speed = 0;//speed of animation (set by dialogue controller)
-talk_speed_modifier = .08 / global.xspeed;//multiply this by speed to get animation speed
+talk_speed_modifier = .08 * global.xspeed;//multiply this by speed to get animation speed
 talking = false;//is the portrait talking?
 
 blink_frame = 0;//frame of blink animation

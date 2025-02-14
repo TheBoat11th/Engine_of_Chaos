@@ -6,11 +6,11 @@ function Pan_Battle_Cutscene_Character() {
 
 	with(_object){
 	    if(pan_direction = "in"){
-	        x_pan = max_x_pan;
+	        x_pan = max_x_pan * (global.xspeed/4);
 	        display_HUD = true;
 	    }
 	    else if(pan_direction = "in_long"){
-	        x_pan = -(max_x_pan*2);
+	        x_pan = -(max_x_pan*2) * (global.xspeed/4);
 	        display_HUD = true;
 	    }
 	    else{//panning out, dont display HUD

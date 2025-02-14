@@ -1,0 +1,14 @@
+fps increase to 730 when nvidia display set from 60hz to custom 73hz
+setting to 660fps at 60hz results in 6500fps
+
+Map Cursor
+character below tree
+draw cursor 1 below character
+draw 2 above treee and only on tree
+
+load perma_death config
+increase cursor speed - set to even numbers
+
+add dialouge check for pixel perfect notification
+set fps with number input if integer fps allowed
+

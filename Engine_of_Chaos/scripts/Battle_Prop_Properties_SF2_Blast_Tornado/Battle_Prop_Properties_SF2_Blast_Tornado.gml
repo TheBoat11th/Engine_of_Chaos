@@ -1,6 +1,6 @@
 function Battle_Prop_Stats_SF2_Blast_Tornado(_stat){
 	var _sprite = spr_SF2_Tornado;
-	var _animation_speed = .25;
+	var _animation_speed = .25 / global.xspeed;
 	var _draw_location = "Foreground";
 	var _instant_destruction = false;//immediately destroys on spell controller destruction
 	

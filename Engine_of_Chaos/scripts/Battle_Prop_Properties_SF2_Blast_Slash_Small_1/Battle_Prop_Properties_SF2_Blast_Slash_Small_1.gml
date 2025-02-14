@@ -1,6 +1,6 @@
 function Battle_Prop_Stats_SF2_Blast_Slash_Small_1(_stat){
 	var _sprite = spr_SF2_Blast_Slash_Small_1;
-	var _animation_speed = .2;
+	var _animation_speed = .2 / global.xspeed;
 	var _draw_location = "Highest";
 	var _instant_destruction = false;//immediately destroys on spell controller destruction
 	

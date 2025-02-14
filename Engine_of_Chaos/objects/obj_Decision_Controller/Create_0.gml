@@ -15,8 +15,8 @@ font_color = c_white;//The color of our font
 menu_font = fnt_MenuFont;//Font we're using
 
 //input repeat delays
-max_input_delay = 40;//on key press, set timer to 40
-min_input_delay = 5;//on continued hold, set timer to 5
+max_input_delay = 40 * global.xspeed;//on key press, set timer to 40
+min_input_delay = 5 * global.xspeed;//on continued hold, set timer to 5
 input_delay = max_input_delay;
 auto_move = false;
 
@@ -29,5 +29,5 @@ image_speed = .0625 / global.xspeed;//speed of animation
 icon_separation = 16;
 max_pan = (Get_Camera_Width() - (((sprite_get_width(spr_Empty_Menu_Icon) + icon_separation) * number_of_icons)+sprite_get_width(spr_Menu_Name_Window)));//max pan
 pan = max_pan;//pan
-pan_speed = round(8 * global.xspeed);//pan speed
+pan_speed = 8 * global.xspeed;//pan speed
 

@@ -1,7 +1,7 @@
 function Projectile_Stats_Default(_stat){
 	var _sprite = spr_Battered_Arrow;
 	var _animation_speed = 0;
-	var _movement_speed = 15 / global.xspeed;
+	var _movement_speed = 15;
 	
 	switch(_stat){
 		case "Sprite": return _sprite break;

@@ -37,7 +37,7 @@ function Battle_01_Intro_Cutscene() {
 	    break;
 	    case 2:
 	        state += 1;
-	        alarm[0] = 30 * global.xspeed;
+	        alarm[0] = 30;
 	    break;
 	    case 3:
 	        state += 1;
@@ -45,7 +45,7 @@ function Battle_01_Intro_Cutscene() {
 	    break;
 	    case 4:
 	        state += 1;
-	        alarm[0] = 30 * global.xspeed;
+	        alarm[0] = 30;
 	    break;
 	    case 5:
 	        state += 1;
@@ -53,7 +53,7 @@ function Battle_01_Intro_Cutscene() {
 	    break;
 	    case 6:
 	        state += 1;
-	        alarm[0] = 30 * global.xspeed;
+	        alarm[0] = 30;
 	    break;
 	    case 7:
 	        state += 1;
@@ -61,7 +61,7 @@ function Battle_01_Intro_Cutscene() {
 	    break;
 	    case 8:
 	        state += 1;
-	        alarm[0] = 30 * global.xspeed;
+	        alarm[0] = 30;
 	    break;
 	    case 9:
 	        state += 1;

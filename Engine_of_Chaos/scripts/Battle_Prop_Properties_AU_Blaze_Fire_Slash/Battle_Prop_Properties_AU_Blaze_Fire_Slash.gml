@@ -1,6 +1,6 @@
 function Battle_Prop_Stats_AU_Blaze_Fire_Slash(_stat){
 	var _sprite = spr_AU_Blaze_Fire_Slash;
-	var _animation_speed = .5;
+	var _animation_speed = .5 / global.xspeed;
 	var _draw_location = "Highest_02";
 	var _instant_destruction = false;//immediately destroys on spell controller destruction
 	

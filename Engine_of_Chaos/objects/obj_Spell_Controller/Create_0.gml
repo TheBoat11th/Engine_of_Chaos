@@ -23,7 +23,7 @@ flash_color = c_white;
 tint_color = c_white;
 flash_timer = 0;
 flash_on = 3;
-max_flash_timer = 6 * global.xspeed;
+max_flash_timer = 6;
 iterations = 1;
 display_spell = false;
 

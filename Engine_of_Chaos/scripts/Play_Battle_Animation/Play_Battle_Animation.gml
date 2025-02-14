@@ -16,8 +16,8 @@ function Play_Battle_Animation(_object,_animation,_trigger_event,_freeze_final_f
 	//if we're using a build in animation (hit shake / death fade / etc.)
 	if(Get_Battle_Cutscene_Sprite_Stats(_sprite,_animation,"Use_Controller_Animation")){
 	    if(_animation = "Take_Hit"){//Set up take hit animation
-	        Hit_Flash(_object,.125);
-	        _object.hit_timer = _object.max_hit_timer;
+	        Hit_Flash(_object,.125 / global.xspeed);
+	        _object.hit_timer = _object.max_hit_timer * global.xspeed;
 			_object.freeze_final_frame = false;
 	    }
 	    else if(_animation = "Death"){//set up death animation

@@ -40,7 +40,7 @@
   "origin": 4,
   "parent": {
     "name": "AU_Blaze",
-    "path": "folders/Sprites/Spells/AU_Blaze.yy",
+    "path": "folders/Sprites/Battle_Cutscenes/Spell_Animations/AU_Spells/AU_Blaze.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -71,7 +71,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"60974c6f-d664-4509-9ee9-c29f067f737d","path":"sprites/spr_Cieras_Dad_Fishing_Overworld/spr_Cieras_Dad_Fishing_Overworld.yy",},},},"Disabled":false,"id":"3c89a8ac-e196-4923-a813-d3a5989aea72","IsCreationKey":false,"Key":7.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": null,
+    "visibleRange": {"x":0.0,"y":0.0,},
     "volume": 1.0,
     "xorigin": 0,
     "yorigin": 0,

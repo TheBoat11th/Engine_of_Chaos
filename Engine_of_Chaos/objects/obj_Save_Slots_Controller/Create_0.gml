@@ -10,7 +10,7 @@ play_pan_sound = false;
 event = "none";
 
 //Scroll arrow
-max_scroll_arrow_timer = 15;//Time between arrow flashes
+max_scroll_arrow_timer = 15 * global.xspeed;//Time between arrow flashes
 scroll_arrow_timer = max_scroll_arrow_timer;
 scroll_arrow_state = 0;//0/1 on or off
 show_scroll_arrows = true;//do we show the scroll arrows? (off when selections are made)
@@ -18,7 +18,7 @@ arrow_position = 0;//array position of the selection arrow
 start_index = 0;//the first menu option to be shown (Scroll bar)
 
 //input repeat delays
-max_input_delay = 20 * global.xspeed;//on key press, set timer to 40
+max_input_delay = 40 * global.xspeed;//on key press, set timer to 40
 min_input_delay = 5 * global.xspeed;//on continued hold, set timer to 5
 input_delay = max_input_delay;
 auto_move = false;

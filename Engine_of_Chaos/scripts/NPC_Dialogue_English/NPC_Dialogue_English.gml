@@ -5,7 +5,7 @@ function NPC_Dialogue_English(_npc,_player,_dialogue_ID) {
 		//============
 		//Generic NPCs
 		//============
-		case "Default_Advisor_Greeting": return ("Hello " + _player_name + ". Did you need something?"); break;
+        case "Default_Advisor_Greeting": return ("Hello " + _player_name + ". Did you need something?"); break;
 	    case "Default_Advisor_Farewell": return ("Take it easy " + _player_name + "!"); break;
 		case "Default_Priest_Greeting": return ("Ah, I've been expecting you."); break;
 	    case "Default_Priest_Farewell": return ("May the light guide you on your journey."); break;

@@ -6,5 +6,4 @@ function Reset_Game_Settings(){
 	global.Pixel_Divider = 3;
 	global.Vsync = false;
 	global.FPS_Cap = 60;
-	global.FixedFocus = false;
 }

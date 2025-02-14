@@ -62,8 +62,8 @@ if((!moving)&&(allow_interaction)&&(!pathfinding)){//if we arent moving and we c
 //Movement Updator=
 //=================
 if(moving){
-    x -= speed_x; //update x position
-    y -= speed_y; //update y position
+    x += speed_x; //update x position
+    y += speed_y; //update y position
     move_timer -= move_speed;//decrease timer by speed
     if (move_timer <= 0){//if we have reached the end
         moving = false;//stop moving

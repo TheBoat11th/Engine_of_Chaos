@@ -57,7 +57,7 @@ function Battle_02_Intro_Cutscene() {
 		
 		case 1:
 			state += 1;
-			alarm[0] = 60 * global.xspeed;
+			alarm[0] = 60;
 		break;
 		
 		case 2:
@@ -90,7 +90,7 @@ function Battle_02_Intro_Cutscene() {
 		break;
 		case 8:
 			state += 1;
-			alarm[0] = 60 * global.xspeed;
+			alarm[0] = 60;
 		break;
 		case 9:
 			state += 1;
@@ -98,7 +98,7 @@ function Battle_02_Intro_Cutscene() {
 			//_max.image_speed = 0;
 			//_max.image_index = 0;
 			//_max.sprite_index = spr_AU_Max_ARCR_Overworld_Shoot_Right;
-			alarm[0] = 60 * global.xspeed;
+			alarm[0] = 60;
 		break;
 		case 10:
 			state += 1;
@@ -120,7 +120,7 @@ function Battle_02_Intro_Cutscene() {
 		break;
 		case 13:
 			state += 1;
-			alarm[0] = 10 * global.xspeed;
+			alarm[0] = 10;
 		break;
 		
 		case 14:
@@ -128,21 +128,21 @@ function Battle_02_Intro_Cutscene() {
 			Play_Music(bgm_Random_Battle,"Fade_To_Next",120,0);
 			Enable_Spell_Cast_Flash(_wisp2,3,c_black,c_teal);
 			Play_Sound(sfx_Spell_Cast);
-			alarm[0] = 60 * global.xspeed;
+			alarm[0] = 60;
 		break;
 		
 		case 15:
 			state += 1;
 			Enable_Spell_Cast_Flash(_wisp3,3,c_black,c_teal);
 			Play_Sound(sfx_Spell_Cast);
-			alarm[0] = 20 * global.xspeed;
+			alarm[0] = 20;
 		break;
 		
 		case 16:
 			state += 1;
 			Enable_Spell_Cast_Flash(_wisp4,3,c_black,c_teal);
 			Play_Sound(sfx_Spell_Cast);
-			alarm[0] = 20 * global.xspeed;
+			alarm[0] = 20;
 		break;
 		
 		case 17:

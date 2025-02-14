@@ -1,6 +1,6 @@
 function Battle_Prop_Stats_AU_Blaze_Fire_Small(_stat){
 	var _sprite = spr_AU_Blaze_Fire_Small;
-	var _animation_speed = .25;
+	var _animation_speed = .25 / global.xspeed;
 	var _draw_location = "Foreground";
 	
 	switch(_stat){

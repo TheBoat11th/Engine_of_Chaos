@@ -31,7 +31,7 @@ display_level = false;
 //AI Stuff
 waiting_for_AI = false;
 ai_timer = 0;
-max_ai_timer = 18;
+max_ai_timer = 18 * global.xspeed;
 ai_script_ID = "Default";
 ai_x_origin = x;
 ai_y_origin = y;
@@ -52,7 +52,7 @@ for(i = 0; i < 10; i += 1){//Sets all 10 flags to '0'
 
 //pathfinding
 pathfinding = false;//are we currently moving a path?
-pathfinding_speed = 2 / global.xspeed;//time between movement events;//speed when moving on a path
+pathfinding_speed = 2 / global.xspeed;//speed when moving on a path
 path_timer = 0;//timer for moving on path (to play step sound)
 pathfind_loop = false;//for transfer tiles
 pathfinding_end_action = "none";//what do we do during 'end of path' event?
@@ -149,6 +149,7 @@ reveal_state = -1;//what battle state do they reveal on?
 attack_on_reveal = false;//do they get a turn after they reveal themselves?
 reveal_action = "Default";//do they get a turn when revealing? Or wait until next round?
 reveal_requires_exact_region = false;//do we need to be in the exact region for them to reveal? If not, any higher region will trigger a reveal
+force_reveal_hidden = false; //Are we forcing them to reveal regardless of trigger conditions?
 
 turn_start_x = x;//x position at the start of the turn
 turn_start_y = y;//y position at the start of the turn
@@ -325,11 +326,12 @@ church_dialogue_ID[3] = "Default_Church";//Church dialogue script (Save)
 idle_animation_speed = .0625 / global.xspeed;//animation speed for standing still
 player_walking_animation_speed = .125 / global.xspeed;//animation speed for moving
 npc_walking_animation_speed = .0625 / global.xspeed;//animation speed for moving
-player_move_speed = 2;//walk speed when the player moves them
-npc_move_speed = 1;//walk speed when an NPC moves by itself
+player_move_speed = 2 / global.xspeed;//walk speed when the player moves them
+npc_move_speed = 1 / global.xspeed;//walk speed when an NPC moves by itself
 move_speed = 0;//actual move speed (set via above 2, or cutscenes)
 sprite_offset_x = (global.Tile_Size / 2);//draw location
 sprite_offset_y = 4;//draw location
+fastcheck = false;
 
 //============================
 //Post Modifyable Calculations

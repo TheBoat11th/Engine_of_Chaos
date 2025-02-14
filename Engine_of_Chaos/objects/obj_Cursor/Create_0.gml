@@ -1,4 +1,4 @@
-cursor_type = "Square";
+cursor_type = "Default";
 cursor_size = 1;
 movement_type = "Cursor";
 allow_interaction = false;

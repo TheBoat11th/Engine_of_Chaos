@@ -4,7 +4,7 @@
 window_pan_direction = "none";//direction of the pan
 allow_interaction = false;//Are we able to interact with this object
 
-scroll_arrow_timer = 15;//Time between arrow flashes
+scroll_arrow_timer = 15 * global.xspeed;//Time between arrow flashes
 scroll_arrow_state = 0;//0/1 on or off
 show_scroll_arrows = true;//do we show the scroll arrows? (off when selections are made)
 
@@ -24,7 +24,7 @@ menu_locked[0] = false;//can we select the first option?
 settings_array[0] = "";//settings display name
 
 //input repeat delays
-max_input_delay = 20 * global.xspeed;//on key press, set timer to 40
+max_input_delay = 40 * global.xspeed;//on key press, set timer to 40
 min_input_delay = 5 * global.xspeed;//on continued hold, set timer to 5
 input_delay = max_input_delay;
 auto_move = false;

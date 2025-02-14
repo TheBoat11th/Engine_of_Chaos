@@ -21,7 +21,7 @@ function Destination_Blocked(_x,_y,_movement_type,_object,_formula){
 	        }
 	        with(_object){//instance_place requires the object to run the code
 	            if(!Can_Pass_Through_Character(_object,instance_place(_x,_y,obj_Character))){//if we cant walk through the character
-	                return global.PTC;
+	                return true;
 	            }
 	            if(!Can_Walk_On_Ledge(_object,instance_place(_x,_y,obj_Ledge_Parent))){
 	                return true;

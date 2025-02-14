@@ -3,7 +3,7 @@ end_y = 0;
 x_speed = 0;
 y_speed = 0;
 
-movement_speed = 1;//how fast the projectile moves
+movement_speed = 1 / global.xspeed;//how fast the projectile moves
 sub_id = "none";
 
 rotation = 0;

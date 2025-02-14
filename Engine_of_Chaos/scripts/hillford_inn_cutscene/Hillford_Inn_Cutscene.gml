@@ -20,7 +20,6 @@ function AU_Hillford_Inn_Cutscene() {
 	        _jason.cutscene_mode = true;
 			_kira.cutscene_mode = true;
 			Move_Character(_jason,"Up",2,1);
-			alarm [0] = 55 * global.xspeed;
 	    break;
 	    case 1:
 	        state += 1;
@@ -34,24 +33,21 @@ function AU_Hillford_Inn_Cutscene() {
 			_ciera.cutscene_mode = true;
 			Stop_Following_Character(_ciera);
 			_ciera.custom_move_script = "Character_Movement_Ciera_Hillford_Inn_Cutscene";
-			alarm [0] = 55 * global.xspeed;
+			
 	    break;
 		case 2:
 	        state += 1;
 			Move_Character(_max,"Right",5,6);//character,direction,tiles,speed
-			alarm [0] = 55 * global.xspeed;
 	    break;
 		
 		case 3:
 			state += 1;
 			Move_Character(_max,"Up",2,6);
-			alarm [0] = 55 * global.xspeed;
 		break;
 		
 		case 4:
 			state += 1;
 			Shudder(_max);
-			alarm [0] = 55 * global.xspeed;
 		break;
 		
 		case 5:
@@ -307,7 +303,7 @@ function AU_Hillford_Inn_Cutscene() {
 		
 		case 53:
 			state += 1;
-			alarm[0] = 1;
+			alarm[0] = 1 * global.xspeed;
 		break;
 		
 		case 54:

@@ -34,7 +34,7 @@ function Get_Battle_Sprite_Stats_Default(_animation,_stat){
 	var _parent_animation = _animation;
 	var _location = "Background";
 	var _sprite = spr_Blank_Sprite;
-	global._animation_speed = .0625 / global.xspeed;
+	var _animation_speed = .0625 / global.xspeed;
 	var _projectile_type = "Weapon";
 	var _projectile_path = "Default";
 	var _event_type = "Default";

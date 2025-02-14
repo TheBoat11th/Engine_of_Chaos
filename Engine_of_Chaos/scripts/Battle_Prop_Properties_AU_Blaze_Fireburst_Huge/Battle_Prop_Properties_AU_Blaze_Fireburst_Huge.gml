@@ -1,6 +1,6 @@
 function Battle_Prop_Stats_AU_Blaze_Fireburst_Huge(_stat){
 	var _sprite = spr_AU_Blaze_Fireburst_Huge;
-	var _animation_speed = .5;
+	var _animation_speed = .5 / global.xspeed;
 	var _draw_location = "Foreground";
 	var _instant_destruction = false;//immediately destroys on spell controller destruction
 	

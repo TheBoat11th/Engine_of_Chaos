@@ -1,6 +1,6 @@
 flash_color = c_white;//Color of the fade
 flash_alpha = 0;//current fade alpha
-flash_speed = .02;//speed of the fade
+flash_speed = .02 / global.xspeed;//speed of the fade
 flash_direction = "in";//direction of fade, in or out
 
 flash_max = 1;

@@ -6,7 +6,7 @@ function Create_Dialogue(_portrait,_voice,_message,_object,_arrow,_auto_pan,_del
 	_this.voice = _voice;
 	_this.display_arrow = _arrow;//Do we display the continue arrow or not?
 	_this.auto_pan_out = _auto_pan;
-	_this.end_message_delay = _delay;//delay until panning out dialogue (so the text isnt instantly removed)
+	_this.end_message_delay = _delay * global.xspeed;//delay until panning out dialogue (so the text isnt instantly removed)
 	_this.force_end = _force_end;//delay until panning out dialogue (so the text isnt instantly removed)
 
 	if(_portrait = noone){//if we arent displaying a portrait, skip the pan and start panning up the dialogue window.

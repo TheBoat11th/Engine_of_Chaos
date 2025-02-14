@@ -99,7 +99,6 @@ function Menu_Message_English(_menu,_message_ID) {
 				case "Pixel_Divider": return ("Pixel Divider"); break;
 				case "Vsync": return ("Vsync"); break;
 				case "FPS_Cap": return ("FPS Cap"); break;
-				case "FixedFocus": return ("FixedFocus"); break;
 	        }
 	    break;
 	    case "Cheats_Menu":

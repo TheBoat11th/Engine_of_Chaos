@@ -118,9 +118,21 @@ if(use_shader){//if using a shader
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 //==============================================
 //Enable Shader
-//==============================================
 if(hit_flash){//if we're using a shader
     shader_set(sh_Hit_Flash);
 

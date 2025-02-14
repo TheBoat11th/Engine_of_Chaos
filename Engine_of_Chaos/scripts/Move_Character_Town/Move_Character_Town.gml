@@ -57,9 +57,9 @@ function Move_Character_Town(_x,_y,_direction,_tiles,_speed,_animation_speed,_lo
 	    }
 	    moving = true;// Lets start moving
 	    move_speed = _speed;//set speed to whatever the player's walk speed is
-	    move_timer = global.Tile_Size * round(global.xspeed);// Ready moveTimer for countdown
-	    speed_x = -round(x-_x)/(global.Tile_Size/move_speed * round(global.xspeed));
-	    speed_y = -round(y-_y)/(global.Tile_Size/move_speed * round(global.xspeed));
+	    move_timer = global.Tile_Size;// Ready moveTimer for countdown
+	    speed_x = -round(x-_x)/(global.Tile_Size/move_speed);
+	    speed_y = -round(y-_y)/(global.Tile_Size/move_speed);
 	    image_speed = _animation_speed;//set walk animation speed
 	    projected_x = _x;//set projected x
 	    projected_y = _y;//set projected y

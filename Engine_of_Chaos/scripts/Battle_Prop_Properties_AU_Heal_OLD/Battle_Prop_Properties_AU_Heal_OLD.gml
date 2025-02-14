@@ -1,6 +1,6 @@
 function Battle_Prop_Stats_AU_Heal_OLD(_stat){
 	var _sprite = spr_AU_Heal;
-	var _animation_speed = .5;
+	var _animation_speed = .5 / global.xspeed;
 	var _draw_location = "Highest";
 	
 	switch(_stat){

@@ -1,6 +1,6 @@
 function Battle_Prop_Stats_SF2_Prism_Flower_Shot(_stat){
 	var _sprite = spr_SF2_Prism_Flower_Shot;
-	var _animation_speed = .5;
+	var _animation_speed = .5 / global.xspeed;
 	var _draw_location = "Highest";
 	var _instant_destruction = false;//immediately destroys on spell controller destruction
 	

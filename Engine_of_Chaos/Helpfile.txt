@@ -1,0 +1,29 @@
+
+//offset display for pixel perfect division - nvidia control panel set scaling to no scaling,perform scaling on gpu
+
+C:\Users\Username\AppData\Local\Engine_of_Chaos\Game_Settings.cfg - where you can also define fractional fps like 59.970000
+
+key config defined in Get_Control_Names
+global.Pass_Through_Character for cutscene writing - Destination_Blocked line 14: return global.Pass_Through_Character; default true
+
+Display Cursor Disabled inrelease
+
+
+create room
+set object on map
+map backround sprite
+set room order
+
+character:
+portrait - eyes,mouth open/closed
+overworld sprite - bbffrr
+battle sprite - attack, block, cast, idle
+character properties script
+
+
+Movement_Tile: Create - image_speed increase to .25 to match  SF Legacy of Great Intention
+//Movement tile flashing pattern sprites
+//SFFC - ndddll-past n to l- l n        0,-1,-2,-3,-2,-1,+1,+2
+					4  4  4  4  4  4  4  4   32
+//LOGI - nddlnln			0,-1,-2,-1,0,+1,0
+					3 3   9  3 6  3 3 	 30

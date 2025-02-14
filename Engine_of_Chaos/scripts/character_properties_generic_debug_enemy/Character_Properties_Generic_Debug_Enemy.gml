@@ -4,9 +4,9 @@ function Town_Character_Stats_Generic_Debug_Enemy(_character){
 	    faction = "Enemy";//Faction
 	    gold_value = 20;
 	    level = 1;
-	    max_health = 110;
+	    max_health = 1000;
 	    current_health = max_health;
-		max_magic = 900;
+		max_magic = 1000;
 		current_magic = max_magic;
 	    attack = 1;
 	    defense = 4;

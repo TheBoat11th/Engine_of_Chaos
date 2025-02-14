@@ -5,7 +5,7 @@ function Pan_Camera_To_Location(_x,_y,_call_cutscene = obj_Camera.call_cutscene,
 	    x = _x;
 	    y = _y;
 	    call_cutscene = _call_cutscene;
-		camera_speed = _speed;
+		camera_speed = _speed / global.xspeed;
 		x_border = _x_border;
 		y_border = _y_border;  
 	}

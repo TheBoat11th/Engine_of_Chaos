@@ -1,7 +1,7 @@
 function Projectile_Stats_Battered_Knife(_stat){
 	var _sprite = spr_Battered_Knife_Projectile;
 	var _animation_speed = 0;
-	var _movement_speed = 15 / global.xspeed;
+	var _movement_speed = 15;
 	
 	switch(_stat){
 		case "Sprite": return _sprite break;

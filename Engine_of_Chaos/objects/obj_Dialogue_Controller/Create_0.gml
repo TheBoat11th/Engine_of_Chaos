@@ -19,7 +19,7 @@ allow_speed_up = true; //Do you want to allow the player to be able to speed up 
 wait_for_input = false;//For longer messages, wait for the user to push the select button to continue
 auto_pan_out = false;//do we automatically pan out the dialogue window when done or wait for script call?
 ending_message = false;//are we ending the message and starting the delay countdown?
-end_message_delay = 5;//default 'continue' delay.
+end_message_delay = 5 * global.xspeed*2;//default 'continue' delay.
 force_end = false;//do we close the dialogue controller without user input?
 
 voice = noone; //sound we play when printing dialogue

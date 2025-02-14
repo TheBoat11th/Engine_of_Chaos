@@ -31,7 +31,6 @@ if(screen_flash){
 //===================
 if(display_spell){
 	if(effect != "none"){
-		alarm [0] = 200;
 		Run_Battle_Cutscene_Spell_Event(effect,"Loop",id);
 	}
 }

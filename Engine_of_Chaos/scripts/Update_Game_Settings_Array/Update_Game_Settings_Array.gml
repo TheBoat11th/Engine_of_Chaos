@@ -17,10 +17,4 @@ function Update_Game_Settings_Array() {
 	    settings_array[6] = "Disabled";
 	}
 	settings_array[7] = global.FPS_Cap;
-	if(global.FixedFocus){
-	    settings_array[8] = "Enabled";
-	}
-	else{
-	    settings_array[8] = "Disabled";
-	}
 }

@@ -15,7 +15,7 @@ x_pan = max_x_pan;
 pan_direction = "none";
 on_screen = false;
 
-max_hit_timer = 30 * global.xspeed;
+max_hit_timer = 30;
 hit_timer = 0;
 
 shake_x = 0;

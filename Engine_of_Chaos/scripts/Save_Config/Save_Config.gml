@@ -14,8 +14,8 @@ function Save_Config(){
 	ini_write_real("Controls","Cancel_Button",global.Cancel_Button);
 	ini_write_real("Controls","Inspect_Button",global.Inspect_Button);
 	ini_write_real("Controls","Main_Menu_Button",global.Main_Menu_Button);
-	ini_write_real("Controls","Fastforward",global.Fastforward);
-	ini_write_real("Controls","Fullscreen",global.Full_Screen_Button);
+	ini_write_real("Controls","Fast_Forward",global.Fast_Forward);
+	ini_write_real("Controls","Full_Screen",global.Full_Screen_Button);
 
 	//settings
 	ini_write_real("Settings","Dialogue_Speed",global.Dialogue_Speed);
@@ -26,8 +26,6 @@ function Save_Config(){
 	ini_write_real("Settings","Pixel_Divider",global.Pixel_Divider);
 	ini_write_string("Settings","Vsync",global.Vsync);
 	ini_write_real("Settings","FPS_Cap",global.FPS_Cap);
-	ini_write_string("Settings","FixedFocus",global.FixedFocus);
-	
-	
+
 	ini_close();
 }

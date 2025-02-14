@@ -1,9 +1,27 @@
+if (keyboard_check_pressed(global.Fast_Forward) = true) {
+	switch(fastcheck){
+		case false:
+			fastcheck = true;
+			//Create_Dialogue(noone,Get_Character_Voice("Global",1,"Total"),"True",id,true,true);//portrait, voice, message,ob
+			game_set_speed(735, gamespeed_fps);
+			display_reset(0, false);
+		break;
+		case true:
+			fastcheck = false;
+			//Create_Dialogue(noone,Get_Character_Voice("Global",1,"Total"),"false",id,true,true);//portrait, voice, message,ob
+			if (global.Vsync = true){
+			game_set_speed(ceil(display_get_frequency()), gamespeed_fps)
+			display_reset(0, true);}
+			else {game_set_speed(global.FPS_Cap, gamespeed_fps);}
+		break;
+	}
+}
 
 if (keyboard_check_pressed(global.Main_Menu_Button) = true) {
 				Create_Screen_Fade(c_black,0,1,.04,"out",id);//color,initial alpha,end alpha,fade speed, fade direction, current object
 				room_goto(room_Title_Screen);
 	}
-	
+
 //================
 //Player Movement=
 //================
@@ -28,7 +46,7 @@ if(Can_Control_Character(id)){
 if(object_following != noone){//if we are following a target
     if(object_following.move_timer = (global.Tile_Size /2)){//if the target we're following is halfway to their destination,
         if(Find_Distance_Radius(object_following.projected_x,object_following.projected_y,projected_x,projected_y)>1){
-        move_speed = 2 / round(global.xspeed);//set move speed to target move speed (in case of a slower or faster target)
+        move_speed = object_following.move_speed;//set move speed to target move speed (in case of a slower or faster target)
         var _follower_x_offset = follower_x_offset;
         var _follower_y_offset = follower_y_offset;
         Follower_Movement(follower_x_offset,follower_y_offset);//try to move to the projected area

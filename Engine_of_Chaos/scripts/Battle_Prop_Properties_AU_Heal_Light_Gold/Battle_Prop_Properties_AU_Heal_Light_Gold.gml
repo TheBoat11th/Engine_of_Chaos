@@ -1,6 +1,6 @@
 function Battle_Prop_Stats_AU_Heal_Light_Gold(_stat){
 	var _sprite = spr_AU_Heal_Light_Gold;
-	var _animation_speed = .34;
+	var _animation_speed = .34 / global.xspeed;
 	var _draw_location = "Highest";
 	var _instant_destruction = false;//immediately destroys on spell controller destruction
 	

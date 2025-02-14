@@ -1,6 +1,6 @@
 function Battle_Prop_Stats_AU_Blaze_Fireburst_Large(_stat){
 	var _sprite = spr_AU_Blaze_Fireburst_Large;
-	var _animation_speed = .5;
+	var _animation_speed = .5 / global.xspeed;
 	var _draw_location = "Highest";
 	var _instant_destruction = false;//immediately destroys on spell controller destruction
 	

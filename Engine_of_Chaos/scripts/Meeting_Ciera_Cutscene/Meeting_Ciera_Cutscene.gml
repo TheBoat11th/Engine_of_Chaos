@@ -10,15 +10,13 @@ function Meeting_Ciera_Cutscene() {
 	        _jason.allow_interaction = false;
 	        _jason.cutscene_mode = true;
 	        _max.cutscene_mode = true;
-			alarm [0] = 1;
 	    break;
 	    case 1:
-	        state += .1;
+	        state += 1;
 	        Stop_Following_Character(_max);
-	    break;
-		case 1.1:
-	        state += .9;
-	        Move_Character(_max,"Right",1,6);//character,direction,tiles,speed
+			if (global.FPS_Cap > 180) {
+	        Move_Character(_max,"Right",1.5,6);}//character,direction,tiles,speed
+	       else {Move_Character(_max,"Right",1,6);}//character,direction,tiles,speed
 	    break;
 	    case 2:
 	        state += 1;
@@ -26,7 +24,7 @@ function Meeting_Ciera_Cutscene() {
 	        _max.depth -= 2;
 	        Pan_Camera_To_Location(840,336,false);
 	        Move_Character(_jason,"Right",.5,6);
-			Move_Character(_max,"Right",2,6);//character,direction,tiles,speed
+	        Move_Character(_max,"Right",2,6);//character,direction,tiles,speed
 	    break;
 	    case 3:
 	        state += 1;
