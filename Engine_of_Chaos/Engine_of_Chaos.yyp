@@ -425,7 +425,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.92",
+    "IDEVersion": "2023.6.0.89",
   },
   "resources": [
     {"id":{"name":"spr_Terrain_Free","path":"sprites/spr_Terrain_Free/spr_Terrain_Free.yy",},},
@@ -505,6 +505,7 @@
     {"id":{"name":"Character_Properties_AU_Stalagnid","path":"scripts/Character_Properties_AU_Stalagnid/Character_Properties_AU_Stalagnid.yy",},},
     {"id":{"name":"spr_Character_Name_Window","path":"sprites/spr_Character_Name_Window/spr_Character_Name_Window.yy",},},
     {"id":{"name":"spr_Character_Name_Selector","path":"sprites/spr_Character_Name_Selector/spr_Character_Name_Selector.yy",},},
+    {"id":{"name":"Scroll_Intro","path":"sprites/Scroll_Intro/Scroll_Intro.yy",},},
     {"id":{"name":"Character_Properties_AU_Hillford_Kid_02","path":"scripts/Character_Properties_AU_Hillford_Kid_02/Character_Properties_AU_Hillford_Kid_02.yy",},},
     {"id":{"name":"Level_Scheme_SF2_Archer_Janet","path":"scripts/Level_Scheme_SF2_Archer_Janet/Level_Scheme_SF2_Archer_Janet.yy",},},
     {"id":{"name":"spr_Character_Name_Selector_2","path":"sprites/spr_Character_Name_Selector_2/spr_Character_Name_Selector_2.yy",},},
@@ -657,6 +658,7 @@
     {"id":{"name":"spr_Battle_Background_AU_Cave","path":"sprites/spr_Battle_Background_AU_Cave/spr_Battle_Background_AU_Cave.yy",},},
     {"id":{"name":"spr_Buy_Menu_Icon","path":"sprites/spr_Buy_Menu_Icon/spr_Buy_Menu_Icon.yy",},},
     {"id":{"name":"spr_Sell_Menu_Icon","path":"sprites/spr_Sell_Menu_Icon/spr_Sell_Menu_Icon.yy",},},
+    {"id":{"name":"Sprite621","path":"sprites/Sprite621/Sprite621.yy",},},
     {"id":{"name":"spr_Repair_Menu_Icon","path":"sprites/spr_Repair_Menu_Icon/spr_Repair_Menu_Icon.yy",},},
     {"id":{"name":"spr_Deals_Menu_Icon","path":"sprites/spr_Deals_Menu_Icon/spr_Deals_Menu_Icon.yy",},},
     {"id":{"name":"spr_Attack_Menu_Icon","path":"sprites/spr_Attack_Menu_Icon/spr_Attack_Menu_Icon.yy",},},
@@ -1685,6 +1687,7 @@
     {"id":{"name":"Move_Cursor","path":"scripts/Move_Cursor/Move_Cursor.yy",},},
     {"id":{"name":"room_Hillford_Item_Shop_Second_Floor","path":"rooms/room_Hillford_Item_Shop_Second_Floor/room_Hillford_Item_Shop_Second_Floor.yy",},},
     {"id":{"name":"spr_AU_Chaos_Appear","path":"sprites/spr_AU_Chaos_Appear/spr_AU_Chaos_Appear.yy",},},
+    {"id":{"name":"spr_Tile_LoGI","path":"sprites/spr_Tile_LoGI/spr_Tile_LoGI.yy",},},
     {"id":{"name":"Can_Control_Character","path":"scripts/Can_Control_Character/Can_Control_Character.yy",},},
     {"id":{"name":"Battle_Prop_Properties_SF2_Blaze_Fireball_Large","path":"scripts/Battle_Prop_Properties_SF2_Blaze_Fireball_Large/Battle_Prop_Properties_SF2_Blaze_Fireball_Large.yy",},},
     {"id":{"name":"Can_Pass_Through_Character","path":"scripts/Can_Pass_Through_Character/Can_Pass_Through_Character.yy",},},

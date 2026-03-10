@@ -1,4 +1,5 @@
-2023.6.0.92
+IDE 2023.6.0.89 Runtime 2023.6.0.136
+
 //added auto-pixel perfect resolution scaling,pixel divider
 //vsync on/off menu and save function
 //FPS_Cap
