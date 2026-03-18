@@ -14,8 +14,11 @@ Continue dialouge function when pressing cancel button. - obj_Dialouge_Controlle
 
 game_set_speed(global.FPS_Cap, gamespeed_fps); High framerate fix (60-540 FPS) - divide by global.xspeed
 
-AU_Moorenfirch_Priest_Blacksmith - addedcase0.5 for 240fps+ AU_Moorenfirch_Priest_Church - adjusted for 240fps+
+AU_Moorenfirch_Priest_Blacksmith - addedcase0.5 for 240fps+
+AU_Moorenfirch_Priest_Church - adjusted for 240fps+
 
 Battle_02 terrain_Instace_Layer Visible
 
 meeting Ciera, and Max cutscene adjusted for 240fps+
+
+global.PTC(Pass_Through_Character) for cutscene scripting in Destination_Blocked line-24; Default = true

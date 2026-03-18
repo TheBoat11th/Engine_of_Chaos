@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "Scroll_Intro",
+  "name": "SFFC_Scroll_Intro",
   "bbox_bottom": 1919,
   "bbox_left": 0,
   "bbox_right": 634,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "Scroll_Intro",
+    "name": "SFFC_Scroll_Intro",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bc8a5ff6-1048-4b9a-b768-b642fbe0c17c","path":"sprites/Scroll_Intro/Scroll_Intro.yy",},},},"Disabled":false,"id":"70b01f64-28e2-4756-ada6-00fed46b45f6","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bc8a5ff6-1048-4b9a-b768-b642fbe0c17c","path":"sprites/SFFC_Scroll_Intro/SFFC_Scroll_Intro.yy",},},},"Disabled":false,"id":"70b01f64-28e2-4756-ada6-00fed46b45f6","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

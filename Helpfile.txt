@@ -4,7 +4,7 @@
 C:\Users\Username\AppData\Local\Engine_of_Chaos\Game_Settings.cfg - where you can also define fractional fps like 59.970000
 
 key config defined in Get_Control_Names
-global.Pass_Through_Character for cutscene writing - Destination_Blocked line 14: return global.Pass_Through_Character; default true
+
 
 Display Cursor Disabled inrelease
 

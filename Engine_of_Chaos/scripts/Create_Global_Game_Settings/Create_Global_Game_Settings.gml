@@ -80,4 +80,5 @@ function Create_Global_Game_Settings() {
 	global.Max_Target_Range = 99;//Max search distance when generating attack range
 	global.Max_AoE_Range = 99;//Max AoE Size
 	global.Egress_Room = noone;//Room we retreat back to.
+	global.PTC = true;//Pass Through Character for cutscene scripting.
 }
